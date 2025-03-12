@@ -734,7 +734,7 @@ class InvenTreeAPI {
 
   // Request plugin information from the server
   Future<bool> _fetchPlugins() async {
-
+    return true;
     _plugins.clear();
 
     debug("API: getPluginInformation()");
