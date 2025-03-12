@@ -864,7 +864,7 @@ class InvenTreePlugin extends InvenTreeModel {
 
   @override
   String get URL {
-
+    return "plugins";
     /* Note: The plugin API endpoint changed at API version 90,
      * <  90 = 'plugin'
      * >= 90 = 'plugins'
