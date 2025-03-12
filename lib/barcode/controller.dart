@@ -1,8 +1,8 @@
 import "package:flutter/material.dart";
 
 import "package:inventree/preferences.dart";
-import "package:inventree/barcode/handler.dart";
 import "package:inventree/widget/progress.dart";
+import "package:inventree/barcode/handler.dart";
 
 /*
  * Generic class which provides a barcode scanner interface.

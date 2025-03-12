@@ -200,6 +200,7 @@ class _CameraBarcodeControllerState extends InvenTreeBarcodeControllerState {
       actionButtonsBackgroundBorderRadius:
       BorderRadius.circular(40),
       scannerOverlay: BarcodeOverlay(context),
+      // ignore: deprecated_member_use
       actionButtonsBackgroundColor: Colors.black.withOpacity(0.7),
     );
   }

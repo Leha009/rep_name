@@ -188,7 +188,7 @@ class InvenTreeAPI {
 
   // Minimum required API version for server
   // 2023-03-04
-  static const _minApiVersion = 20;
+  static const _minApiVersion = 30;
 
   bool _strictHttps = false;
 
@@ -438,6 +438,12 @@ class InvenTreeAPI {
   Future<bool> _checkServer() async {
 
     String address = profile?.server ?? "";
+
+    showServerError(
+        apiUrl,
+        "Start",
+        "checkServer started",
+      );
 
     if (address.isEmpty) {
       showSnackIcon(

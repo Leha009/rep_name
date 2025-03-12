@@ -8,14 +8,13 @@
  */
 
 import "dart:io";
-import "package:currency_formatter/currency_formatter.dart";
 
-import "package:one_context/one_context.dart";
-import "package:url_launcher/url_launcher.dart";
 import "package:audioplayers/audioplayers.dart";
-
+import "package:currency_formatter/currency_formatter.dart";
 import "package:inventree/l10.dart";
 import "package:inventree/widget/snacks.dart";
+import "package:one_context/one_context.dart";
+import "package:url_launcher/url_launcher.dart";
 
 
 
@@ -53,8 +52,9 @@ bool debugContains(String msg, {bool raiseAssert = true}) {
 
 
 bool isTesting() {
-  return Platform.environment.containsKey("FLUTTER_TEST");
+  return true;//Platform.environment.containsKey("FLUTTER_TEST");
 }
+
 
 bool hasContext() {
   try {
