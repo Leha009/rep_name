@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:flutter_tabler_icons/flutter_tabler_icons.dart";
 
+import "package:inventree/api.dart";
 import "package:inventree/app_colors.dart";
 import "package:inventree/barcode/controller.dart";
 import "package:inventree/barcode/handler.dart";
@@ -38,6 +39,8 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
   DateTime? _lastScanTime;
 
+  InvenTreeAPI get api => InvenTreeAPI();
+
   @override
   Future<void> pauseScan() async {
 
@@ -60,21 +63,24 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
   // Callback for a single key press / scan
   void handleKeyEvent(KeyEvent event) {
-
+    api.get("/key/66");
     if (!scanning) {
       return;
     }
 
+    api.get("/key/71");
     // Look only for key-down events
     if (event is! KeyDownEvent) {
       return;
     }
 
+    api.get("/key/77");
     // Ignore events without a character code
     if (event.character == null) {
       return;
     }
 
+    api.get("/key/83");
     DateTime now = DateTime.now();
 
     // Throw away old characters
@@ -84,9 +90,12 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
     _lastScanTime = now;
 
+    api.get("/key/93");
+
     if (event.character == "\n") {
       if (_scannedCharacters.isNotEmpty) {
         // Debug output required for unit testing
+        api.get("/key/${_scannedCharacters.join()}");
         debug("scanned: ${_scannedCharacters.join()}");
         handleBarcodeData(_scannedCharacters.join());
       }
@@ -95,6 +104,8 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
     } else {
       _scannedCharacters.add(event.character!);
     }
+
+    api.get("/key/108");
   }
 
   @override
