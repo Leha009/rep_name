@@ -713,14 +713,10 @@ class InvenTreeAPI {
 
     var data = response.asMap();
 
-    get("/user/fetchedroles", expectedStatusCode: 200);
-
     if (!data.containsKey("roles")) {
 
       roles = {};
       permissions = {};
-
-      get("/user/showerror", expectedStatusCode: 200);
 
       showServerError(
         apiUrl,
@@ -730,12 +726,15 @@ class InvenTreeAPI {
       return false;
     }
 
-    get("/user/733line", expectedStatusCode: 200);
+    get("/user/729line", expectedStatusCode: 200);
 
     roles = (data["roles"] ?? {}) as Map<String, dynamic>;
+
+    get("/user/733line", expectedStatusCode: 200);
+
     permissions = (data["permissions"] ?? {}) as Map<String, dynamic>;
 
-    get("/user/738line", expectedStatusCode: 200);
+    get("/user/737line", expectedStatusCode: 200);
 
     return true;
   }
