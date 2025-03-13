@@ -195,7 +195,6 @@ class InvenTreeAPI {
   // Endpoint for requesting an API token
   static const _URL_TOKEN = "user/token/";
   static const _URL_ROLES = "user/roles/";
-  static const _URL_PERMISSIONS = "user/permissions/";
   static const _URL_ME = "user/me/";
 
   // Accessors for various url endpoints
@@ -726,31 +725,9 @@ class InvenTreeAPI {
       );
       return false;
     }
-
-    /* final permissions_response = await get(_URL_PERMISSIONS);
-    if (!permissions_response.successful()) {
-      return false;
-    }
-
-    var perm_data = permissions_response.asMap();
-
-    if (!perm_data.containsKey("roles")) {
-
-      roles = {};
-      permissions = {};
-
-      showServerError(
-        apiUrl,
-        L10().serverError,
-        L10().errorUserRoles,
-      );
-      return false;
-    } */
-
+    
     roles = (data["roles"] ?? {}) as Map<String, dynamic>;
-    permissions = {};
-
-    //permissions = (perm_data["permissions"] ?? {}) as Map<String, dynamic>;
+    permissions = roles;
 
     return true;
   }
