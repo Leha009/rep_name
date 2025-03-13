@@ -422,9 +422,9 @@ class InvenTreeAPI {
       return false;
     }
 
-    if (!await _fetchPlugins()) {
+    /* if (!await _fetchPlugins()) {
       return false;
-    }
+    } */
 
     // Finally, connected
     return true;
