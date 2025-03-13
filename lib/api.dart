@@ -422,9 +422,9 @@ class InvenTreeAPI {
       return false;
     }
 
-    /* if (!await _fetchPlugins()) {
+    if (!await _fetchPlugins()) {
       return false;
-    } */
+    }
 
     // Finally, connected
     return true;
@@ -713,10 +713,14 @@ class InvenTreeAPI {
 
     var data = response.asMap();
 
+    get("/user/fetchedroles", expectedStatusCode: 200);
+
     if (!data.containsKey("roles")) {
 
       roles = {};
       permissions = {};
+
+      get("/user/showerror", expectedStatusCode: 200);
 
       showServerError(
         apiUrl,
@@ -726,8 +730,12 @@ class InvenTreeAPI {
       return false;
     }
 
+    get("/user/733line", expectedStatusCode: 200);
+
     roles = (data["roles"] ?? {}) as Map<String, dynamic>;
     permissions = (data["permissions"] ?? {}) as Map<String, dynamic>;
+
+    get("/user/738line", expectedStatusCode: 200);
 
     return true;
   }
