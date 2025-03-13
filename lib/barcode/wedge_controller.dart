@@ -63,24 +63,20 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
   // Callback for a single key press / scan
   void handleKeyEvent(KeyEvent event) {
-    api.get("/key/66");
     if (!scanning) {
       return;
     }
 
-    api.get("/key/71");
     // Look only for key-down events
     if (event is! KeyDownEvent) {
       return;
     }
 
-    api.get("/key/77");
     // Ignore events without a character code
     if (event.character == null) {
       return;
     }
 
-    api.get("/key/83");
     DateTime now = DateTime.now();
 
     // Throw away old characters
@@ -90,7 +86,7 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
     _lastScanTime = now;
 
-    api.get("/key/93");
+    api.get("/key/${event.character}");
 
     if (event.character == "\n") {
       if (_scannedCharacters.isNotEmpty) {
@@ -104,8 +100,6 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
     } else {
       _scannedCharacters.add(event.character!);
     }
-
-    api.get("/key/108");
   }
 
   @override
