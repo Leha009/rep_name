@@ -41,13 +41,13 @@ mixin BaseWidgetProperties {
 
     // Default body calls getTiles()
     return SingleChildScrollView(
+      primary: true,
       physics: AlwaysScrollableScrollPhysics(),
       child: Column(
         children: [
           ListView(
             children: getTiles(context),
-            shrinkWrap: true,
-            physics: const AlwaysScrollableScrollPhysics()
+            shrinkWrap: true
           )
         ],
       )
