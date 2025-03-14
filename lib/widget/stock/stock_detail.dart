@@ -109,13 +109,13 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
           )
         );
 
-        actions.add(
+        /* actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.circle_minus, color: Colors.red),
             label: L10().removeStock,
             onTap: _removeStockDialog,
           )
-        );
+        ); */
 
         actions.add(
           SpeedDialChild(
@@ -156,7 +156,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       );
     }
 
-    if (widget.item.canDelete) {
+    /* if (widget.item.canDelete) {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.trash, color: Colors.red),
@@ -166,7 +166,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
               }
           )
       );
-    }
+    } */
 
     return actions;
   }
