@@ -80,11 +80,11 @@ Future<Object?> scanBarcode(BuildContext context, {BarcodeHandler? handler}) asy
   // Default to generic scan handler
   handler ??= BarcodeScanHandler();
   
-  InvenTreeBarcodeController controller = CameraBarcodeController(handler);
-  //InvenTreeBarcodeController controller = WedgeBarcodeController(handler);
+  //InvenTreeBarcodeController controller = CameraBarcodeController(handler);
+  InvenTreeBarcodeController controller = WedgeBarcodeController(handler);
 
   // Select barcode controller based on user preference
-  final int barcodeControllerType = await InvenTreeSettingsManager().getValue(INV_BARCODE_SCAN_TYPE, BARCODE_CONTROLLER_CAMERA) as int;
+  /* final int barcodeControllerType = await InvenTreeSettingsManager().getValue(INV_BARCODE_SCAN_TYPE, BARCODE_CONTROLLER_CAMERA) as int;
 
   switch (barcodeControllerType) {
     case BARCODE_CONTROLLER_WEDGE:
@@ -94,7 +94,7 @@ Future<Object?> scanBarcode(BuildContext context, {BarcodeHandler? handler}) asy
     default:
       // Already set as default option
       break;
-  }
+  } */
 
   return Navigator.of(context).push(
     PageRouteBuilder(
