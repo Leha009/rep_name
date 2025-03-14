@@ -47,6 +47,7 @@ mixin BaseWidgetProperties {
           ListView(
             children: getTiles(context),
             shrinkWrap: true,
+            physics: const AlwaysScrollableScrollPhysics()
           )
         ],
       )
