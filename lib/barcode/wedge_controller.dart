@@ -63,7 +63,6 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
   // Callback for a single key press / scan
   void handleKeyEvent(KeyEvent event) {
-    api.get("/key/${event.character}");
     if (!scanning) {
       return;
     }
