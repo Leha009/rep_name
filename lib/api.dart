@@ -679,14 +679,14 @@ class InvenTreeAPI {
         success: true,
       );
 
-      if (_notification_timer == null) {
+      /* if (_notification_timer == null) {
         debug("starting notification timer");
         _notification_timer = Timer.periodic(
             Duration(seconds: 5),
                 (timer) {
               _refreshNotifications();
             });
-      }
+      } */
     }
 
     _connectionStatusChanged();
