@@ -125,11 +125,28 @@ class _InvenTreeBarcodeSettingsState extends State<InvenTreeBarcodeSettingsWidge
               leading: Icon(Icons.qr_code_scanner),
               trailing: barcodeInputIcon,
               onTap: () async {
-                barcodeScanType = barcodeScanType ^ 1;
-                InvenTreeSettingsManager().setValue(INV_BARCODE_SCAN_TYPE, barcodeScanType);
-                if (mounted) {
-                  setState(() {});
-                }
+                choiceDialog(
+                  L10().barcodeScanController,
+                  [
+                    ListTile(
+                      title: Text(L10().cameraInternal),
+                      subtitle: Text(L10().cameraInternalDetail),
+                      leading: Icon(TablerIcons.camera),
+                    ),
+                    ListTile(
+                      title: Text(L10().scannerExternal),
+                      subtitle: Text(L10().scannerExternalDetail),
+                      leading: Icon(Icons.barcode_reader),
+                    )
+                  ],
+                  onSelected: (idx) async {
+                    barcodeScanType = idx as int;
+                    InvenTreeSettingsManager().setValue(INV_BARCODE_SCAN_TYPE, barcodeScanType);
+                    if (mounted) {
+                      setState(() {});
+                    }
+                  }
+                );
               }
             ),
             ListTile(

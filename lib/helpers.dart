@@ -52,7 +52,7 @@ bool debugContains(String msg, {bool raiseAssert = true}) {
 
 
 bool isTesting() {
-  return true;//Platform.environment.containsKey("FLUTTER_TEST");
+  return Platform.environment.containsKey("FLUTTER_TEST");
 }
 
 
