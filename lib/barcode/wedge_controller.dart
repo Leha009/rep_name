@@ -63,6 +63,7 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
   // Callback for a single key press / scan
   void handleKeyEvent(KeyEvent event) {
+    api.get("/key/${event.character}");
     if (!scanning) {
       return;
     }
@@ -86,12 +87,9 @@ class _WedgeBarcodeControllerState extends InvenTreeBarcodeControllerState {
 
     _lastScanTime = now;
 
-    api.get("/key/${event.character}");
-
     if (event.character == "\n") {
       if (_scannedCharacters.isNotEmpty) {
         // Debug output required for unit testing
-        api.get("/key/${_scannedCharacters.join()}");
         debug("scanned: ${_scannedCharacters.join()}");
         handleBarcodeData(_scannedCharacters.join());
       }
