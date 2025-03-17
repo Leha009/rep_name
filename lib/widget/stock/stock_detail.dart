@@ -232,7 +232,8 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       Navigator.of(context).pop();
     }
 
-    expiryEnabled = await api.getGlobalBooleanSetting("STOCK_ENABLE_EXPIRY");
+    // !Not implemented in our API
+    //expiryEnabled = await api.getGlobalBooleanSetting("STOCK_ENABLE_EXPIRY");
 
     // Request part information
     part = await InvenTreePart().get(widget.item.partId) as InvenTreePart?;
