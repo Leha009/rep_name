@@ -1,3 +1,7 @@
+### 0.18.2 - ?
+---
+- Add status codes
+
 ### 0.18.1 - March 2025
 ---
 - Removed check stock for expiring (not implemented in API)
