@@ -139,13 +139,13 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       }
 
       // Assign or un-assign barcodes
-      actions.add(
+      /* actions.add(
           customBarcodeAction(
               context, this,
               location!.customBarcode, "stocklocation",
               location!.pk
           )
-      );
+      ); */
     }
 
     return actions;

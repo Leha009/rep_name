@@ -1,3 +1,9 @@
+### 0.18.1 - March 2025
+---
+- Removed check stock for expiring (not implemented in API)
+- Remove stock action was hidden
+- (Un-) assign barcode action was hidden
+
 ### 0.18.0 - February 2025
 ---
 - Adds ability to create new companies from the app

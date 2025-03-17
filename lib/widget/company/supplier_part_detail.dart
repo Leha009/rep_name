@@ -59,7 +59,8 @@ class _SupplierPartDisplayState extends RefreshableState<SupplierPartDetailWidge
   List<SpeedDialChild> barcodeButtons(BuildContext context) {
     List<SpeedDialChild> actions = [];
 
-    if (widget.supplierPart.canEdit) {
+    // Assign / unassign barcode
+    /* if (widget.supplierPart.canEdit) {
       actions.add(
         customBarcodeAction(
           context, this,
@@ -68,7 +69,7 @@ class _SupplierPartDisplayState extends RefreshableState<SupplierPartDetailWidge
           widget.supplierPart.pk
         )
       );
-    }
+    } */
 
     return actions;
   }
