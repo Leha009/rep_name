@@ -235,7 +235,7 @@ Future<void> showServerError(String url, String title, String description) async
     onAction: () {
       showErrorDialog(
           L10().serverError,
-          description: description,
+          description: description + "\nURL: ${url}",
           icon: TablerIcons.server
       );
     }
