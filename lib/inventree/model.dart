@@ -863,7 +863,7 @@ class InvenTreePlugin extends InvenTreeModel {
   InvenTreeModel createFromJson(Map<String, dynamic> json) => InvenTreePlugin.fromJson(json);
 
   @override
-  String get URL => "plugin";
+  String get URL => "plugin/";
 
   String get key => getString("key");
   
