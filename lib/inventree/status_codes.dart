@@ -53,7 +53,7 @@ class InvenTreeStatusCode {
     }
 
     // The server must support this feature!
-    if (InvenTreeAPI().supportsStatusLabelEndpoints) {
+    if (!InvenTreeAPI().supportsStatusLabelEndpoints) {
       Map<String, Map<int, dynamic>> default_codes = {
         "stock/track/status/": {
           0: {"key": 0, "label": "Legacy", "name": "Legacy"},
