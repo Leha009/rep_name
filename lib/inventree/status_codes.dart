@@ -54,79 +54,79 @@ class InvenTreeStatusCode {
 
     // The server must support this feature!
     if (!InvenTreeAPI().supportsStatusLabelEndpoints) {
-      Map<String, Map<int, dynamic>> default_codes = {
+      Map<String, Map<String, dynamic>> default_codes = {
         "stock/track/status/": {
-          0: {"key": 0, "label": "Legacy", "name": "Legacy"},
-          1: {"key": 1, "label": "Created", "name": "Created"},
+          "0": {"key": 0, "label": "Legacy", "name": "Legacy"},
+          "1": {"key": 1, "label": "Created", "name": "Created"},
           // Manual editing operations
-          5: {"key": 5, "label": "Edited", "name": "Edited"},
-          6: {"key": 6, "label": "Assigned serial", "name": "Assigned serial"},
+          "5": {"key": 5, "label": "Edited", "name": "Edited"},
+          "6": {"key": 6, "label": "Assigned serial", "name": "Assigned serial"},
           // Manual stock operations
-          10: {"key": 10, "label": "Stock count", "name": "Stock count"},
-          11: {"key": 11, "label": "Stock add", "name": "Stock add"},
-          12: {"key": 12, "label": "Stock remove", "name": "Stock remove"},
+          "10": {"key": 10, "label": "Stock count", "name": "Stock count"},
+          "11": {"key": 11, "label": "Stock add", "name": "Stock add"},
+          "12": {"key": 12, "label": "Stock remove", "name": "Stock remove"},
           // Location operations
-          20: {"key": 20, "label": "Stock move", "name": "Stock move"},
-          25: {"key": 25, "label": "Stock update", "name": "Stock update"},
+          "20": {"key": 20, "label": "Stock move", "name": "Stock move"},
+          "25": {"key": 25, "label": "Stock update", "name": "Stock update"},
           // Installation operations
-          30: {"key": 30, "label": "Installed into assembly", "name": "Installed into assembly"},
-          31: {"key": 31, "label": "Removed from assembly", "name": "Removed from assembly"},
-          35: {"key": 35, "label": "Installed child item", "name": "Installed child item"},
-          36: {"key": 36, "label": "Removed child item", "name": "Removed child item"},
+          "30": {"key": 30, "label": "Installed into assembly", "name": "Installed into assembly"},
+          "31": {"key": 31, "label": "Removed from assembly", "name": "Removed from assembly"},
+          "35": {"key": 35, "label": "Installed child item", "name": "Installed child item"},
+          "36": {"key": 36, "label": "Removed child item", "name": "Removed child item"},
           // Stock splitting operations
-          40: {"key": 40, "label": "Split from parent", "name": "Split from parent"},
-          42: {"key": 42, "label": "Split child item", "name": "Split child item"},
+          "40": {"key": 40, "label": "Split from parent", "name": "Split from parent"},
+          "42": {"key": 42, "label": "Split child item", "name": "Split child item"},
           // Stock merging operations
-          45: {"key": 45, "label": "Merged stock items", "name": "Merged stock items"},
+          "45": {"key": 45, "label": "Merged stock items", "name": "Merged stock items"},
           // Convert stock item to variant
-          48: {"key": 48, "label": "Converted to variant", "name": "Converted to variant"},
+          "48": {"key": 48, "label": "Converted to variant", "name": "Converted to variant"},
           // Build order codes
-          50: {"key": 50, "label": "Build output created", "name": "Build output created"},
-          55: {"key": 55, "label": "Build output completed", "name": "Build output completed"},
-          56: {"key": 56, "label": "Build output rejected", "name": "Build output rejected"},
-          57: {"key": 57, "label": "Build consumed", "name": "Build consumed"},
+          "50": {"key": 50, "label": "Build output created", "name": "Build output created"},
+          "55": {"key": 55, "label": "Build output completed", "name": "Build output completed"},
+          "56": {"key": 56, "label": "Build output rejected", "name": "Build output rejected"},
+          "57": {"key": 57, "label": "Build consumed", "name": "Build consumed"},
           // Sales order codes
-          60: {"key": 60, "label": "Shipped against sales order", "name": "Shipped against sales order"},
+          "60": {"key": 60, "label": "Shipped against sales order", "name": "Shipped against sales order"},
           // Purchase order codes
-          70: {"key": 70, "label": "Received against purchase order", "name": "Received against purchase order"},
+          "70": {"key": 70, "label": "Received against purchase order", "name": "Received against purchase order"},
           // Return order codes
-          80: {"key": 80, "label": "Returned against return order", "name": "Returned against return order"},
+          "80": {"key": 80, "label": "Returned against return order", "name": "Returned against return order"},
           // Customer actions
-          100: {"key": 100, "label": "Sent to customer", "name": "Sent to customer"},
-          105: {"key": 105, "label": "Returned from customer", "name": "Returned from customer"}
+          "100": {"key": 100, "label": "Sent to customer", "name": "Sent to customer"},
+          "105": {"key": 105, "label": "Returned from customer", "name": "Returned from customer"}
         },
         "stock/status/": {
-          10: {"key": 10, "label": "OK", "name": "OK"},
-          50: {"key": 50, "label": "Attention needed", "name": "Attention needed"},
-          55: {"key": 55, "label": "Damaged", "name": "Damaged"},
-          60: {"key": 60, "label": "Destroyed", "name": "Destroyed"},
-          65: {"key": 65, "label": "Rejected", "name": "Rejected"},
-          70: {"key": 70, "label": "Lost", "name": "Lost"},
-          75: {"key": 75, "label": "Quarantined", "name": "Quarantined"},
-          85: {"key": 85, "label": "Returned", "name": "Returned"}
+          "10": {"key": 10, "label": "OK", "name": "OK"},
+          "50": {"key": 50, "label": "Attention needed", "name": "Attention needed"},
+          "55": {"key": 55, "label": "Damaged", "name": "Damaged"},
+          "60": {"key": 60, "label": "Destroyed", "name": "Destroyed"},
+          "65": {"key": 65, "label": "Rejected", "name": "Rejected"},
+          "70": {"key": 70, "label": "Lost", "name": "Lost"},
+          "75": {"key": 75, "label": "Quarantined", "name": "Quarantined"},
+          "85": {"key": 85, "label": "Returned", "name": "Returned"}
         },
         "order/po/status/": {
-          10: {"key": 10, "label": "Pending", "name": "Pending"},  // Order is pending (not yet placed)
-          20: {"key": 20, "label": "Placed", "name": "Placed"},  // Order has been placed with supplier
-          25: {"key": 25, "label": "On hold", "name": "On hold"},  // Order is on hold
-          30: {"key": 30, "label": "Complete", "name": "Complete"},  // Order has been completed
-          40: {"key": 40, "label": "Cancelled", "name": "Cancelled"},  // Order was cancelled
-          50: {"key": 50, "label": "Lost", "name": "Lost"},  // Order was lost
-          60: {"key": 60, "label": "Returned", "name": "Returned"},  // Order was returned
+          "10": {"key": 10, "label": "Pending", "name": "Pending"},  // Order is pending (not yet placed)
+          "20": {"key": 20, "label": "Placed", "name": "Placed"},  // Order has been placed with supplier
+          "25": {"key": 25, "label": "On hold", "name": "On hold"},  // Order is on hold
+          "30": {"key": 30, "label": "Complete", "name": "Complete"},  // Order has been completed
+          "40": {"key": 40, "label": "Cancelled", "name": "Cancelled"},  // Order was cancelled
+          "50": {"key": 50, "label": "Lost", "name": "Lost"},  // Order was lost
+          "60": {"key": 60, "label": "Returned", "name": "Returned"},  // Order was returned
         },
         "order/so/status/": {
-          10: {"key": 10, "label": "Pending", "name": "Pending"},
-          15: {"key": 15, "label": "In progress", "name": "In progress"},
-          20: {"key": 20, "label": "Shipped", "name": "Shipped"},
-          25: {"key": 25, "label": "On hold", "name": "On hold"},
-          30: {"key": 30, "label": "Complete", "name": "Complete"},
-          40: {"key": 40, "label": "Cancelled", "name": "Cancelled"},
-          50: {"key": 50, "label": "Lost", "name": "Lost"},
-          60: {"key": 60, "label": "Returned", "name": "Returned"},
+          "10": {"key": 10, "label": "Pending", "name": "Pending"},
+          "15": {"key": 15, "label": "In progress", "name": "In progress"},
+          "20": {"key": 20, "label": "Shipped", "name": "Shipped"},
+          "25": {"key": 25, "label": "On hold", "name": "On hold"},
+          "30": {"key": 30, "label": "Complete", "name": "Complete"},
+          "40": {"key": 40, "label": "Cancelled", "name": "Cancelled"},
+          "50": {"key": 50, "label": "Lost", "name": "Lost"},
+          "60": {"key": 60, "label": "Returned", "name": "Returned"},
         }
       };
 
-      data = default_codes[URL]! as Map<String, dynamic>;
+      data = default_codes[URL]!;
       return;
     }
 
