@@ -434,6 +434,9 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
     };
 
     return [
+      ListTile(
+        title: Text("Total stock count: N"),
+      ),
       Expanded(
         child: PaginatedStockItemList(filters),
         flex: 10,
