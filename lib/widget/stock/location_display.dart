@@ -6,6 +6,7 @@ import "package:inventree/app_colors.dart";
 import "package:inventree/barcode/barcode.dart";
 import "package:inventree/barcode/purchase_order.dart";
 import "package:inventree/barcode/stock.dart";
+import "package:inventree/counter.dart";
 import "package:inventree/l10.dart";
 
 import "package:inventree/inventree/stock.dart";
@@ -42,6 +43,8 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
   final InvenTreeStockLocation? location;
 
   List<Map<String, dynamic>> labels = [];
+
+  double stockTotalCount = 0;
 
   @override
   String getAppBarTitle() {
@@ -258,6 +261,10 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       }
     }
 
+    if (location != null) {
+      stockTotalCount = await countStocksInLocation(location!.pk) ?? 0;
+    }
+
     if (mounted) {
       setState(() {
         labels = _labels;
@@ -435,7 +442,7 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
 
     return [
       ListTile(
-        title: Text("Total stock count: N"),
+        title: Text("Total stock count: ${stockTotalCount}"),
       ),
       Expanded(
         child: PaginatedStockItemList(filters),
