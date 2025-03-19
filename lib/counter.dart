@@ -1,10 +1,11 @@
 import "package:inventree/api.dart";
 
-Future<double?> countStocksInLocation(int location) async {
+Future<double?> countStocksInLocation(int? location) async {
   String url = "stock/";
   Map<String, String> location_filter = {
-    "location": location.toString(),
+    "location": location?.toString() ?? "null",
   };
+
   var response = await InvenTreeAPI().get(
     url,
     params: location_filter

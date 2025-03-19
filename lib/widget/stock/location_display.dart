@@ -440,9 +440,19 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       "location": location?.pk.toString() ?? "null",
     };
 
+    String stockCount;
+    if (stockTotalCount % 1 == 0) // is int
+    {
+      stockCount = stockTotalCount.round().toString();
+    }
+    else
+    {
+      stockCount = stockTotalCount.toString();
+    }
+
     return [
       ListTile(
-        title: Text("Total stock count: ${stockTotalCount}"),
+        title: Text("Total stock count: ${stockCount}"),
       ),
       Expanded(
         child: PaginatedStockItemList(filters),
