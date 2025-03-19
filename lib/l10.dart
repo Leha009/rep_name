@@ -9,7 +9,6 @@ import "package:inventree/helpers.dart";
 // Shortcut function to reduce boilerplate!
 I18N L10()
 {
-  return I18NEn();
   // Testing mode - ignore context
   if (!hasContext()) {
     return I18NEn();
