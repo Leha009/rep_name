@@ -1,4 +1,4 @@
-### 0.18.2 - ?
+### 0.18.2 - March 2025
 ---
 - Add status codes
 - Add count stock quantity in location page

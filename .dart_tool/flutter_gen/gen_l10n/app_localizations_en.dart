@@ -291,6 +291,9 @@ class I18NEn extends I18N {
   String get count => 'Count';
 
   @override
+  String get countInProgress => 'Counting in progress';
+
+  @override
   String get countStock => 'Count Stock';
 
   @override
