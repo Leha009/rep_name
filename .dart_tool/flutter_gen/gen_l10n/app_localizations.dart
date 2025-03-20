@@ -660,6 +660,12 @@ abstract class I18N {
   /// **'Count'**
   String get count;
 
+  /// No description provided for @countInProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Counting in progress'**
+  String get countInProgress;
+
   /// Count Stock
   ///
   /// In en, this message translates to:

@@ -84,7 +84,7 @@ class I18NRu extends I18N {
   String get attention => 'Внимание';
 
   @override
-  String get attentionNeeded => 'Нужно внимание';
+  String get attentionNeeded => 'Требует внимание';
 
   @override
   String get available => 'Доступно';
@@ -289,6 +289,9 @@ class I18NRu extends I18N {
 
   @override
   String get count => 'Количество';
+
+  @override
+  String get countInProgress => 'Ведется подсчёт';
 
   @override
   String get countStock => 'Количество в наличии';
@@ -1703,7 +1706,7 @@ class I18NRuRu extends I18NRu {
   String get attention => 'Внимание';
 
   @override
-  String get attentionNeeded => 'Нужно внимание';
+  String get attentionNeeded => 'Требует внимание';
 
   @override
   String get available => 'Доступно';
@@ -1908,6 +1911,9 @@ class I18NRuRu extends I18NRu {
 
   @override
   String get count => 'Количество';
+
+  @override
+  String get countInProgress => 'Ведется подсчёт';
 
   @override
   String get countStock => 'Количество в наличии';
