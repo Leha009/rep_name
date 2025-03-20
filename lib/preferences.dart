@@ -118,11 +118,7 @@ class InvenTreeSettingsManager {
   Future<Database> get _db async => InvenTreePreferencesDB.instance.database;
 
   Future<Locale?> getSelectedLocale() async {
-    final String locale_name = await getValue("customLocale", "") as String;
-
-    if (locale_name.isEmpty) {
-      return null;
-    }
+    final String locale_name = await getValue("customLocale", "en") as String;
 
     for (var locale in supported_locales) {
       if (locale.toString() == locale_name) {
