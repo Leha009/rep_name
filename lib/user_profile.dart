@@ -189,23 +189,23 @@ class UserProfileDBManager {
       }
     }
 
-    // If there are no available profiles, create a demo profile
+    // If there are no available profiles, create a prod profile
     if (profileList.isEmpty) {
-      bool added = await InvenTreeSettingsManager().getBool("demo_profile_added", false);
+      bool added = await InvenTreeSettingsManager().getBool("prod_profile_added", false);
 
       // Don't add a new profile if we have added it previously
       if (!added) {
 
-        await InvenTreeSettingsManager().setValue("demo_profile_added", true);
+        await InvenTreeSettingsManager().setValue("prod_profile_added", true);
 
-        UserProfile demoProfile = UserProfile(
-          name: "InvenTree Demo",
-          server: "https://demo.inventree.org",
+        UserProfile prodProfile = UserProfile(
+          name: "InvenTree",
+          server: "https://part.inmys.ru",
         );
 
-        await addProfile(demoProfile);
+        await addProfile(prodProfile);
 
-        profileList.add(demoProfile);
+        profileList.add(prodProfile);
       }
     }
 
