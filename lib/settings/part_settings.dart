@@ -33,9 +33,9 @@ class _InvenTreePartSettingsState extends State<InvenTreePartSettingsWidget> {
   Future<void> loadSettings() async {
     partShowParameters = await InvenTreeSettingsManager().getBool(INV_PART_SHOW_PARAMETERS, true);
     partShowBom = await InvenTreeSettingsManager().getBool(INV_PART_SHOW_BOM, true);
-    stockShowHistory = await InvenTreeSettingsManager().getBool(INV_STOCK_SHOW_HISTORY, false);
-    stockShowTests = await InvenTreeSettingsManager().getBool(INV_STOCK_SHOW_TESTS, true);
-    stockConfirmScan = await InvenTreeSettingsManager().getBool(INV_STOCK_CONFIRM_SCAN, false);
+    stockShowHistory = await InvenTreeSettingsManager().getBool(INV_STOCK_SHOW_HISTORY, true);
+    stockShowTests = await InvenTreeSettingsManager().getBool(INV_STOCK_SHOW_TESTS, false);
+    stockConfirmScan = await InvenTreeSettingsManager().getBool(INV_STOCK_CONFIRM_SCAN, true);
 
     if (mounted) {
       setState(() {
