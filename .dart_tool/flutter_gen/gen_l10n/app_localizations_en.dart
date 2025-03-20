@@ -9,12 +9,6 @@ class I18NEn extends I18N {
   I18NEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'InvenTree';
-
-  @override
-  String get ok => 'OK';
-
-  @override
   String get about => 'About';
 
   @override
@@ -36,6 +30,12 @@ class I18NEn extends I18N {
   String get address => 'Address';
 
   @override
+  String get allocateStock => 'Allocate Stock';
+
+  @override
+  String get allocated => 'Allocated';
+
+  @override
   String get appAbout => 'About InvenTree';
 
   @override
@@ -43,12 +43,6 @@ class I18NEn extends I18N {
 
   @override
   String get appDetails => 'App Details';
-
-  @override
-  String get allocated => 'Allocated';
-
-  @override
-  String get allocateStock => 'Allocate Stock';
 
   @override
   String get appReleaseNotes => 'Display app release notes';
@@ -60,13 +54,16 @@ class I18NEn extends I18N {
   String get appSettingsDetails => 'Configure InvenTree app settings';
 
   @override
+  String get appTitle => 'InvenTree';
+
+  @override
+  String get assignedSerial => 'Assigned serial';
+
+  @override
   String get assignedToMe => 'Assigned to Me';
 
   @override
   String get assignedToMeDetail => 'Show orders which are assigned to me';
-
-  @override
-  String get attachments => 'Attachments';
 
   @override
   String get attachImage => 'Attach Image';
@@ -81,19 +78,19 @@ class I18NEn extends I18N {
   String get attachmentSelect => 'Select attachment';
 
   @override
+  String get attachments => 'Attachments';
+
+  @override
   String get attention => 'Attention';
+
+  @override
+  String get attentionNeeded => 'Attention needed';
 
   @override
   String get available => 'Available';
 
   @override
   String get availableStock => 'Available Stock';
-
-  @override
-  String get barcodes => 'Barcodes';
-
-  @override
-  String get barcodeSettings => 'Barcode Settings';
 
   @override
   String get barcodeAssign => 'Assign Barcode';
@@ -120,16 +117,7 @@ class I18NEn extends I18N {
   String get barcodeNotAssigned => 'Barcode not assigned';
 
   @override
-  String get barcodeScanPart => 'Scan part barcode';
-
-  @override
   String get barcodeReceivePart => 'Scan barcode to receive part';
-
-  @override
-  String get barcodeScanPaused => 'Barcode scanning paused';
-
-  @override
-  String get barcodeScanPause => 'Tap or hold to pause scanning';
 
   @override
   String get barcodeScanAssign => 'Scan to assign barcode';
@@ -153,7 +141,25 @@ class I18NEn extends I18N {
   String get barcodeScanInItems => 'Scan stock items into this location';
 
   @override
+  String get barcodeScanIntoLocationFailure => 'Item not scanned in';
+
+  @override
+  String get barcodeScanIntoLocationSuccess => 'Scanned into location';
+
+  @override
+  String get barcodeScanItem => 'Scan stock item';
+
+  @override
   String get barcodeScanLocation => 'Scan stock location';
+
+  @override
+  String get barcodeScanPart => 'Scan part barcode';
+
+  @override
+  String get barcodeScanPause => 'Tap or hold to pause scanning';
+
+  @override
+  String get barcodeScanPaused => 'Barcode scanning paused';
 
   @override
   String get barcodeScanSingle => 'Single Scan Mode';
@@ -162,13 +168,7 @@ class I18NEn extends I18N {
   String get barcodeScanSingleDetail => 'Pause barcode scanner after each scan';
 
   @override
-  String get barcodeScanIntoLocationSuccess => 'Scanned into location';
-
-  @override
-  String get barcodeScanIntoLocationFailure => 'Item not scanned in';
-
-  @override
-  String get barcodeScanItem => 'Scan stock item';
+  String get barcodeSettings => 'Barcode Settings';
 
   @override
   String get barcodeTones => 'Barcode Tones';
@@ -178,6 +178,9 @@ class I18NEn extends I18N {
 
   @override
   String get barcodeUnknown => 'Barcode is not recognized';
+
+  @override
+  String get barcodes => 'Barcodes';
 
   @override
   String get batchCode => 'Batch Code';
@@ -193,6 +196,18 @@ class I18NEn extends I18N {
 
   @override
   String get build => 'Build';
+
+  @override
+  String get buildConsumed => 'Build consumed';
+
+  @override
+  String get buildOutputCompleted => 'Build output completed';
+
+  @override
+  String get buildOutputCreated => 'Build output created';
+
+  @override
+  String get buildOutputRejected => 'Build output rejected';
 
   @override
   String get building => 'Building';
@@ -213,6 +228,9 @@ class I18NEn extends I18N {
   String get cancelOrder => 'Cancel Order';
 
   @override
+  String get cancelled => 'Cancelled';
+
+  @override
   String get category => 'Category';
 
   @override
@@ -223,6 +241,15 @@ class I18NEn extends I18N {
 
   @override
   String get categoryUpdated => 'Part category updated';
+
+  @override
+  String get colorScheme => 'Color Scheme';
+
+  @override
+  String get colorSchemeDetail => 'Select color scheme';
+
+  @override
+  String get companies => 'Companies';
 
   @override
   String get company => 'Company';
@@ -240,7 +267,7 @@ class I18NEn extends I18N {
   String get companyUpdated => 'Company details updated';
 
   @override
-  String get companies => 'Companies';
+  String get complete => 'Complete';
 
   @override
   String get completionDate => 'Completion Date';
@@ -258,10 +285,19 @@ class I18NEn extends I18N {
   String get connectionRefused => 'Connection Refused';
 
   @override
+  String get convertedToVariant => 'Converted to variant';
+
+  @override
   String get count => 'Count';
 
   @override
   String get countStock => 'Count Stock';
+
+  @override
+  String get countStocksInLocation => 'Counted stocks in location';
+
+  @override
+  String get created => 'Created';
 
   @override
   String get credits => 'Credits';
@@ -270,19 +306,13 @@ class I18NEn extends I18N {
   String get customer => 'Customer';
 
   @override
-  String get customers => 'Customers';
-
-  @override
   String get customerReference => 'Customer Reference';
 
   @override
+  String get customers => 'Customers';
+
+  @override
   String get damaged => 'Damaged';
-
-  @override
-  String get colorScheme => 'Color Scheme';
-
-  @override
-  String get colorSchemeDetail => 'Select color scheme';
 
   @override
   String get darkMode => 'Dark Mode';
@@ -321,10 +351,10 @@ class I18NEn extends I18N {
   String get documentation => 'Documentation';
 
   @override
-  String get downloading => 'Downloading File';
+  String get downloadError => 'Download Error';
 
   @override
-  String get downloadError => 'Download Error';
+  String get downloading => 'Downloading File';
 
   @override
   String get edit => 'Edit';
@@ -334,6 +364,12 @@ class I18NEn extends I18N {
 
   @override
   String get editCategory => 'Edit Category';
+
+  @override
+  String get editItem => 'Edit Stock Item';
+
+  @override
+  String get editLineItem => 'Edit Line Item';
 
   @override
   String get editLocation => 'Edit Location';
@@ -348,10 +384,7 @@ class I18NEn extends I18N {
   String get editPart => 'Edit Part';
 
   @override
-  String get editItem => 'Edit Stock Item';
-
-  @override
-  String get editLineItem => 'Edit Line Item';
+  String get edited => 'Edited';
 
   @override
   String get enterPassword => 'Enter password';
@@ -375,19 +408,19 @@ class I18NEn extends I18N {
   String get errorFetch => 'Error fetching data from server';
 
   @override
-  String get errorUserRoles => 'Error requesting user roles from server';
-
-  @override
   String get errorPluginInfo => 'Error requesting plugin data from server';
-
-  @override
-  String get errorReporting => 'Error Reporting';
 
   @override
   String get errorReportUpload => 'Upload Error Reports';
 
   @override
   String get errorReportUploadDetails => 'Upload anonymous error reports and crash logs';
+
+  @override
+  String get errorReporting => 'Error Reporting';
+
+  @override
+  String get errorUserRoles => 'Error requesting user roles from server';
 
   @override
   String get expiryDate => 'Expiry Date';
@@ -465,13 +498,13 @@ class I18NEn extends I18N {
   String get filteringOptions => 'Filtering Options';
 
   @override
+  String get formError => 'Form Error';
+
+  @override
   String get formatException => 'Format Exception';
 
   @override
   String get formatExceptionJson => 'JSON data format exception';
-
-  @override
-  String get formError => 'Form Error';
 
   @override
   String get history => 'History';
@@ -484,6 +517,18 @@ class I18NEn extends I18N {
 
   @override
   String get homeScreenSettings => 'Configure home screen settings';
+
+  @override
+  String get homeShowCustomers => 'Show Customers';
+
+  @override
+  String get homeShowCustomersDescription => 'Show customers button on home screen';
+
+  @override
+  String get homeShowManufacturers => 'Show Manufacturers';
+
+  @override
+  String get homeShowManufacturersDescription => 'Show manufacturers button on home screen';
 
   @override
   String get homeShowPo => 'Show Purchase Orders';
@@ -510,22 +555,19 @@ class I18NEn extends I18N {
   String get homeShowSuppliersDescription => 'Show suppliers button on home screen';
 
   @override
-  String get homeShowManufacturers => 'Show Manufacturers';
-
-  @override
-  String get homeShowManufacturersDescription => 'Show manufacturers button on home screen';
-
-  @override
-  String get homeShowCustomers => 'Show Customers';
-
-  @override
-  String get homeShowCustomersDescription => 'Show customers button on home screen';
-
-  @override
   String get imageUploadFailure => 'Image upload failed';
 
   @override
   String get imageUploadSuccess => 'Image uploaded';
+
+  @override
+  String get inProduction => 'In Production';
+
+  @override
+  String get inProductionDetail => 'This stock item is in production';
+
+  @override
+  String get inProgress => 'In progress';
 
   @override
   String get inactive => 'Inactive';
@@ -552,19 +594,19 @@ class I18NEn extends I18N {
   String get incompleteDetails => 'Incomplete profile details';
 
   @override
-  String get internalPartNumber => 'Internal Part Number';
-
-  @override
   String get info => 'Info';
 
   @override
-  String get inProduction => 'In Production';
+  String get installedChildItem => 'Installed child item';
 
   @override
-  String get inProductionDetail => 'This stock item is in production';
+  String get installedIntoAssembly => 'Installed into assembly';
 
   @override
   String get internalPart => 'Internal Part';
+
+  @override
+  String get internalPartNumber => 'Internal Part Number';
 
   @override
   String get invalidHost => 'Invalid hostname';
@@ -579,10 +621,10 @@ class I18NEn extends I18N {
   String get invalidPartCategory => 'Invalid Part Category';
 
   @override
-  String get invalidStockLocation => 'Invalid Stock Location';
+  String get invalidStockItem => 'Invalid Stock Item';
 
   @override
-  String get invalidStockItem => 'Invalid Stock Item';
+  String get invalidStockLocation => 'Invalid Stock Location';
 
   @override
   String get invalidSupplierPart => 'Invalid Supplier Part';
@@ -600,10 +642,10 @@ class I18NEn extends I18N {
   String get issueOrder => 'Issue Order';
 
   @override
-  String get itemInLocation => 'Item already in location';
+  String get itemDeleted => 'Item has been removed';
 
   @override
-  String get itemDeleted => 'Item has been removed';
+  String get itemInLocation => 'Item already in location';
 
   @override
   String get itemUpdated => 'Item updated';
@@ -618,13 +660,13 @@ class I18NEn extends I18N {
   String get labelPrintingDetail => 'Enable label printing';
 
   @override
-  String get labelTemplate => 'Label Template';
+  String get labelSelectPrinter => 'Select Label Printer';
 
   @override
   String get labelSelectTemplate => 'Select Label Template';
 
   @override
-  String get labelSelectPrinter => 'Select Label Printer';
+  String get labelTemplate => 'Label Template';
 
   @override
   String get language => 'Language';
@@ -642,19 +684,25 @@ class I18NEn extends I18N {
   String get lastUpdated => 'Last Updated';
 
   @override
-  String get level => 'Level';
+  String get legacy => 'Legacy';
 
   @override
-  String get lineItemAdd => 'Add Line Item';
+  String get level => 'Level';
 
   @override
   String get lineItem => 'Line Item';
 
   @override
-  String get lineItems => 'Line Items';
+  String get lineItemAdd => 'Add Line Item';
 
   @override
   String get lineItemUpdated => 'Line item updated';
+
+  @override
+  String get lineItems => 'Line Items';
+
+  @override
+  String get link => 'Link';
 
   @override
   String get locateItem => 'Locate stock item';
@@ -684,10 +732,10 @@ class I18NEn extends I18N {
   String get loginEnterDetails => 'Username and password are not stored locally';
 
   @override
-  String get link => 'Link';
+  String get lost => 'Lost';
 
   @override
-  String get lost => 'Lost';
+  String get manufacturer => 'Manufacturer';
 
   @override
   String get manufacturerPart => 'Manufacturer Part';
@@ -699,28 +747,16 @@ class I18NEn extends I18N {
   String get manufacturerPartNumber => 'Manufacturer Part Number';
 
   @override
-  String get manufacturer => 'Manufacturer';
+  String get manufacturers => 'Manufacturers';
 
   @override
-  String get manufacturers => 'Manufacturers';
+  String get mergedStockItems => 'Merged stock items';
 
   @override
   String get missingData => 'Missing Data';
 
   @override
   String get name => 'Name';
-
-  @override
-  String get notConnected => 'Not Connected';
-
-  @override
-  String get notes => 'Notes';
-
-  @override
-  String get notifications => 'Notifications';
-
-  @override
-  String get notificationsEmpty => 'No unread notifications';
 
   @override
   String get noResponse => 'No Response from Server';
@@ -735,7 +771,25 @@ class I18NEn extends I18N {
   String get noSubcategoriesAvailable => 'No subcategories available';
 
   @override
+  String get notConnected => 'Not Connected';
+
+  @override
+  String get notes => 'Notes';
+
+  @override
+  String get notifications => 'Notifications';
+
+  @override
+  String get notificationsEmpty => 'No unread notifications';
+
+  @override
   String get numberInvalid => 'Invalid number';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get onHold => 'On hold';
 
   @override
   String get onOrder => 'On Order';
@@ -771,10 +825,10 @@ class I18NEn extends I18N {
   String get overdueDetail => 'Show overdue orders';
 
   @override
-  String get packaging => 'Packaging';
+  String get packageName => 'Package Name';
 
   @override
-  String get packageName => 'Package Name';
+  String get packaging => 'Packaging';
 
   @override
   String get parameters => 'Parameters';
@@ -795,37 +849,7 @@ class I18NEn extends I18N {
   String get part => 'Part';
 
   @override
-  String get partCreate => 'New Part';
-
-  @override
-  String get partCreateDetail => 'Create new part in this category';
-
-  @override
-  String get partEdited => 'Part updated';
-
-  @override
-  String get parts => 'Parts';
-
-  @override
-  String get partNotSalable => 'Part not marked as salable';
-
-  @override
-  String get partsNone => 'No Parts';
-
-  @override
-  String get partNoResults => 'No parts matching query';
-
-  @override
-  String get partSettings => 'Part Settings';
-
-  @override
-  String get partsStarred => 'Subscribed Parts';
-
-  @override
-  String get partsStarredNone => 'No starred parts available';
-
-  @override
-  String get partSuppliers => 'Part Suppliers';
+  String get partCategories => 'Part Categories';
 
   @override
   String get partCategory => 'Part Category';
@@ -834,16 +858,46 @@ class I18NEn extends I18N {
   String get partCategoryTopLevel => 'Top level part category';
 
   @override
-  String get partCategories => 'Part Categories';
+  String get partCreate => 'New Part';
+
+  @override
+  String get partCreateDetail => 'Create new part in this category';
 
   @override
   String get partDetails => 'Part Details';
 
   @override
+  String get partEdited => 'Part updated';
+
+  @override
+  String get partNoResults => 'No parts matching query';
+
+  @override
+  String get partNotSalable => 'Part not marked as salable';
+
+  @override
   String get partNotes => 'Part Notes';
 
   @override
+  String get partSettings => 'Part Settings';
+
+  @override
   String get partStock => 'Part Stock';
+
+  @override
+  String get partSuppliers => 'Part Suppliers';
+
+  @override
+  String get parts => 'Parts';
+
+  @override
+  String get partsNone => 'No Parts';
+
+  @override
+  String get partsStarred => 'Subscribed Parts';
+
+  @override
+  String get partsStarredNone => 'No starred parts available';
 
   @override
   String get password => 'Password';
@@ -852,13 +906,16 @@ class I18NEn extends I18N {
   String get passwordEmpty => 'Password cannot be empty';
 
   @override
+  String get pending => 'Pending';
+
+  @override
   String get permissionAccountDenied => 'Your account does not have the required permissions to perform this action';
 
   @override
   String get permissionRequired => 'Permission Required';
 
   @override
-  String get printLabel => 'Print Label';
+  String get placed => 'Placed';
 
   @override
   String get plugin => 'Plugin';
@@ -871,6 +928,9 @@ class I18NEn extends I18N {
 
   @override
   String get pluginSupportDetail => 'The server supports custom plugins';
+
+  @override
+  String get printLabel => 'Print Label';
 
   @override
   String get printLabelFailure => 'Label printing failed';
@@ -888,10 +948,10 @@ class I18NEn extends I18N {
   String get profileConnect => 'Connect to Server';
 
   @override
-  String get profileEdit => 'Edit Server Profile';
+  String get profileDelete => 'Delete Server Profile';
 
   @override
-  String get profileDelete => 'Delete Server Profile';
+  String get profileEdit => 'Edit Server Profile';
 
   @override
   String get profileLogout => 'Logout Profile';
@@ -918,25 +978,13 @@ class I18NEn extends I18N {
   String get projectCode => 'Project Code';
 
   @override
+  String get purchaseOrder => 'Purchase Order';
+
+  @override
   String get purchaseOrderConfirmScan => 'Confirm Scan Data';
 
   @override
   String get purchaseOrderConfirmScanDetail => 'Confirm details when scanning in items';
-
-  @override
-  String get purchaseOrderEnable => 'Enable Purchase Orders';
-
-  @override
-  String get purchaseOrderEnableDetail => 'Enable purchase order functionality';
-
-  @override
-  String get purchaseOrderShowCamera => 'Camera Shortcut';
-
-  @override
-  String get purchaseOrderShowCameraDetail => 'Enable image upload shortcut on purchase order screen';
-
-  @override
-  String get purchaseOrder => 'Purchase Order';
 
   @override
   String get purchaseOrderCreate => 'New Purchase Order';
@@ -945,13 +993,25 @@ class I18NEn extends I18N {
   String get purchaseOrderEdit => 'Edit Purchase Order';
 
   @override
+  String get purchaseOrderEnable => 'Enable Purchase Orders';
+
+  @override
+  String get purchaseOrderEnableDetail => 'Enable purchase order functionality';
+
+  @override
   String get purchaseOrderSettings => 'Purchase order settings';
 
   @override
-  String get purchaseOrders => 'Purchase Orders';
+  String get purchaseOrderShowCamera => 'Camera Shortcut';
+
+  @override
+  String get purchaseOrderShowCameraDetail => 'Enable image upload shortcut on purchase order screen';
 
   @override
   String get purchaseOrderUpdated => 'Purchase order updated';
+
+  @override
+  String get purchaseOrders => 'Purchase Orders';
 
   @override
   String get purchasePrice => 'Purchase Price';
@@ -972,19 +1032,25 @@ class I18NEn extends I18N {
   String get quantityPositive => 'Quantity must be positive';
 
   @override
+  String get quarantined => 'Quarantined';
+
+  @override
   String get queryEmpty => 'Enter search query';
 
   @override
   String get queryNoResults => 'No results for query';
 
   @override
+  String get receiveItem => 'Receive Item';
+
+  @override
   String get received => 'Received';
 
   @override
-  String get receivedFilterDetail => 'Show received items';
+  String get receivedAgainstPurchaseOrder => 'Received against purchase order';
 
   @override
-  String get receiveItem => 'Receive Item';
+  String get receivedFilterDetail => 'Show received items';
 
   @override
   String get receivedItem => 'Received Stock Item';
@@ -1011,16 +1077,16 @@ class I18NEn extends I18N {
   String get removeStock => 'Remove Stock';
 
   @override
+  String get removedChildItem => 'Removed child item';
+
+  @override
+  String get removedFromAssembly => 'Removed from assembly';
+
+  @override
   String get reportBug => 'Report Bug';
 
   @override
   String get reportBugDescription => 'Submit bug report (requires GitHub account)';
-
-  @override
-  String get responsible => 'Responsible';
-
-  @override
-  String get results => 'Results';
 
   @override
   String get request => 'Request';
@@ -1083,31 +1149,25 @@ class I18NEn extends I18N {
   String get responseUnknown => 'Unknown Response';
 
   @override
+  String get responsible => 'Responsible';
+
+  @override
   String get result => 'Result';
+
+  @override
+  String get results => 'Results';
 
   @override
   String get returned => 'Returned';
 
   @override
+  String get returnedAgainstReturnOrder => 'Returned against return order';
+
+  @override
+  String get returnedFromCustomer => 'Returned from customer';
+
+  @override
   String get salesOrder => 'Sales Order';
-
-  @override
-  String get salesOrders => 'Sales Orders';
-
-  @override
-  String get salesOrderEnable => 'Enable Sales Orders';
-
-  @override
-  String get salesOrderEnableDetail => 'Enable sales order functionality';
-
-  @override
-  String get salesOrderShowCamera => 'Camera Shortcut';
-
-  @override
-  String get salesOrderShowCameraDetail => 'Enable image upload shortcut on sales order screen';
-
-  @override
-  String get salesOrderSettings => 'Sales order settings';
 
   @override
   String get salesOrderCreate => 'New Sales Order';
@@ -1116,7 +1176,25 @@ class I18NEn extends I18N {
   String get salesOrderEdit => 'Edit Sales Order';
 
   @override
+  String get salesOrderEnable => 'Enable Sales Orders';
+
+  @override
+  String get salesOrderEnableDetail => 'Enable sales order functionality';
+
+  @override
+  String get salesOrderSettings => 'Sales order settings';
+
+  @override
+  String get salesOrderShowCamera => 'Camera Shortcut';
+
+  @override
+  String get salesOrderShowCameraDetail => 'Enable image upload shortcut on sales order screen';
+
+  @override
   String get salesOrderUpdated => 'Sales order updated';
+
+  @override
+  String get salesOrders => 'Sales Orders';
 
   @override
   String get save => 'Save';
@@ -1125,13 +1203,16 @@ class I18NEn extends I18N {
   String get scanBarcode => 'Scan Barcode';
 
   @override
-  String get scanSupplierPart => 'Scan supplier part barcode';
-
-  @override
   String get scanIntoLocation => 'Scan Into Location';
 
   @override
   String get scanIntoLocationDetail => 'Scan this item into location';
+
+  @override
+  String get scanReceivedParts => 'Scan Received Parts';
+
+  @override
+  String get scanSupplierPart => 'Scan supplier part barcode';
 
   @override
   String get scannerExternal => 'External Scanner';
@@ -1140,13 +1221,7 @@ class I18NEn extends I18N {
   String get scannerExternalDetail => 'Use external scanner to read barcodes (wedge mode)';
 
   @override
-  String get scanReceivedParts => 'Scan Received Parts';
-
-  @override
   String get search => 'Search';
-
-  @override
-  String get searching => 'Searching';
 
   @override
   String get searchLocation => 'Search for location';
@@ -1156,6 +1231,9 @@ class I18NEn extends I18N {
 
   @override
   String get searchStock => 'Search Stock';
+
+  @override
+  String get searching => 'Searching';
 
   @override
   String get select => 'Select';
@@ -1171,6 +1249,9 @@ class I18NEn extends I18N {
 
   @override
   String get send => 'Send';
+
+  @override
+  String get sentToCustomer => 'Sent to customer';
 
   @override
   String get serialNumber => 'Serial Number';
@@ -1209,16 +1290,25 @@ class I18NEn extends I18N {
   String get serverCouldNotConnect => 'Could not connect to server';
 
   @override
+  String get serverDetails => 'Server Details';
+
+  @override
   String get serverEmpty => 'Server cannot be empty';
 
   @override
   String get serverError => 'Server Error';
 
   @override
-  String get serverDetails => 'Server Details';
+  String get serverInstance => 'Server Instance';
 
   @override
   String get serverMissingData => 'Server response missing required fields';
+
+  @override
+  String get serverNotConnected => 'Server not connected';
+
+  @override
+  String get serverNotSelected => 'Server not selected';
 
   @override
   String get serverOld => 'Old Server Version';
@@ -1233,34 +1323,34 @@ class I18NEn extends I18N {
   String get settings => 'Settings';
 
   @override
-  String get serverInstance => 'Server Instance';
-
-  @override
-  String get serverNotConnected => 'Server not connected';
-
-  @override
-  String get serverNotSelected => 'Server not selected';
+  String get shipmentAdd => 'Add Shipment';
 
   @override
   String get shipments => 'Shipments';
 
   @override
-  String get shipmentAdd => 'Add Shipment';
-
-  @override
   String get shipped => 'Shipped';
 
   @override
-  String get sku => 'SKU';
+  String get shippedAgainstSalesOrder => 'Shipped against sales order';
 
   @override
-  String get sounds => 'Sounds';
+  String get sku => 'SKU';
 
   @override
   String get soundOnBarcodeAction => 'Play audible tone on barcode action';
 
   @override
   String get soundOnServerError => 'Play audible tone on server error';
+
+  @override
+  String get sounds => 'Sounds';
+
+  @override
+  String get splitChildItem => 'Split child item';
+
+  @override
+  String get splitFromParent => 'Split from parent';
 
   @override
   String get status => 'Status';
@@ -1272,13 +1362,16 @@ class I18NEn extends I18N {
   String get stock => 'Stock';
 
   @override
+  String get stockAdd => 'Stock add';
+
+  @override
+  String get stockCount => 'Stock count';
+
+  @override
   String get stockDetails => 'Current available stock quantity';
 
   @override
   String get stockItem => 'Stock Item';
-
-  @override
-  String get stockItems => 'Stock Items';
 
   @override
   String get stockItemCreate => 'New Stock Item';
@@ -1305,22 +1398,25 @@ class I18NEn extends I18N {
   String get stockItemHistoryDetail => 'Display historical stock tracking information';
 
   @override
+  String get stockItemNotes => 'Stock Item Notes';
+
+  @override
   String get stockItemTransferred => 'Stock item transferred';
 
   @override
-  String get stockItemUpdated => 'Stock item updated';
-
-  @override
-  String get stockItemsNotAvailable => 'No stock items available';
-
-  @override
-  String get stockItemNotes => 'Stock Item Notes';
+  String get stockItemUpdateFailure => 'Stock item update failed';
 
   @override
   String get stockItemUpdateSuccess => 'Stock item updated';
 
   @override
-  String get stockItemUpdateFailure => 'Stock item update failed';
+  String get stockItemUpdated => 'Stock item updated';
+
+  @override
+  String get stockItems => 'Stock Items';
+
+  @override
+  String get stockItemsNotAvailable => 'No stock items available';
 
   @override
   String get stockLocation => 'Stock Location';
@@ -1329,7 +1425,16 @@ class I18NEn extends I18N {
   String get stockLocations => 'Stock Locations';
 
   @override
+  String get stockMove => 'Stock move';
+
+  @override
+  String get stockRemove => 'Stock remove';
+
+  @override
   String get stockTopLevel => 'Top level stock location';
+
+  @override
+  String get stockUpdate => 'Stock update';
 
   @override
   String get strictHttps => 'Use Strict HTTPS';
@@ -1338,22 +1443,22 @@ class I18NEn extends I18N {
   String get strictHttpsDetails => 'Enforce strict checking of HTTPs certificates';
 
   @override
-  String get subcategory => 'Subcategory';
-
-  @override
   String get subcategories => 'Subcategories';
 
   @override
-  String get sublocation => 'Sublocation';
+  String get subcategory => 'Subcategory';
 
   @override
-  String get sublocations => 'Sublocations';
+  String get sublocation => 'Sublocation';
 
   @override
   String get sublocationNone => 'No Sublocations';
 
   @override
   String get sublocationNoneDetail => 'No sublocations available';
+
+  @override
+  String get sublocations => 'Sublocations';
 
   @override
   String get submitFeedback => 'Submit Feedback';
@@ -1380,10 +1485,10 @@ class I18NEn extends I18N {
   String get supplierParts => 'Supplier Parts';
 
   @override
-  String get suppliers => 'Suppliers';
+  String get supplierReference => 'Supplier Reference';
 
   @override
-  String get supplierReference => 'Supplier Reference';
+  String get suppliers => 'Suppliers';
 
   @override
   String get takePicture => 'Take Picture';
@@ -1401,15 +1506,6 @@ class I18NEn extends I18N {
   String get testPassedOrFailed => 'Test passed or failed';
 
   @override
-  String get testsRequired => 'Required Tests';
-
-  @override
-  String get testResults => 'Test Results';
-
-  @override
-  String get testResultsDetail => 'Display stock item test results';
-
-  @override
   String get testResultAdd => 'Add Test Result';
 
   @override
@@ -1423,6 +1519,15 @@ class I18NEn extends I18N {
 
   @override
   String get testResultUploadPass => 'Test result uploaded';
+
+  @override
+  String get testResults => 'Test Results';
+
+  @override
+  String get testResultsDetail => 'Display stock item test results';
+
+  @override
+  String get testsRequired => 'Required Tests';
 
   @override
   String get timeout => 'Timeout';

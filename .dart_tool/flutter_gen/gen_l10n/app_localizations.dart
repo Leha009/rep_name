@@ -5,42 +5,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
-import 'app_localizations_ar.dart';
-import 'app_localizations_bg.dart';
-import 'app_localizations_cs.dart';
-import 'app_localizations_da.dart';
-import 'app_localizations_de.dart';
-import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
-import 'app_localizations_es.dart';
-import 'app_localizations_et.dart';
-import 'app_localizations_fa.dart';
-import 'app_localizations_fi.dart';
-import 'app_localizations_fr.dart';
-import 'app_localizations_he.dart';
-import 'app_localizations_hi.dart';
-import 'app_localizations_hu.dart';
-import 'app_localizations_id.dart';
-import 'app_localizations_it.dart';
-import 'app_localizations_ja.dart';
-import 'app_localizations_ko.dart';
-import 'app_localizations_lt.dart';
-import 'app_localizations_lv.dart';
-import 'app_localizations_nl.dart';
-import 'app_localizations_no.dart';
-import 'app_localizations_pl.dart';
-import 'app_localizations_pt.dart';
-import 'app_localizations_ro.dart';
 import 'app_localizations_ru.dart';
-import 'app_localizations_sk.dart';
-import 'app_localizations_sl.dart';
-import 'app_localizations_sr.dart';
-import 'app_localizations_sv.dart';
-import 'app_localizations_th.dart';
-import 'app_localizations_tr.dart';
-import 'app_localizations_uk.dart';
-import 'app_localizations_vi.dart';
-import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -125,93 +91,10 @@ abstract class I18N {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
-    Locale('ar'),
-    Locale('ar', 'SA'),
-    Locale('bg'),
-    Locale('bg', 'BG'),
-    Locale('cs'),
-    Locale('cs', 'CZ'),
-    Locale('da'),
-    Locale('da', 'DK'),
-    Locale('de'),
-    Locale('de', 'DE'),
-    Locale('el'),
-    Locale('el', 'GR'),
     Locale('en'),
-    Locale('es'),
-    Locale('es', 'ES'),
-    Locale('es', 'MX'),
-    Locale('et'),
-    Locale('et', 'EE'),
-    Locale('fa'),
-    Locale('fa', 'IR'),
-    Locale('fi'),
-    Locale('fi', 'FI'),
-    Locale('fr'),
-    Locale('fr', 'FR'),
-    Locale('he'),
-    Locale('he', 'IL'),
-    Locale('hi'),
-    Locale('hi', 'IN'),
-    Locale('hu'),
-    Locale('hu', 'HU'),
-    Locale('id'),
-    Locale('id', 'ID'),
-    Locale('it'),
-    Locale('it', 'IT'),
-    Locale('ja'),
-    Locale('ja', 'JP'),
-    Locale('ko'),
-    Locale('ko', 'KR'),
-    Locale('lt'),
-    Locale('lt', 'LT'),
-    Locale('lv'),
-    Locale('lv', 'LV'),
-    Locale('nl'),
-    Locale('nl', 'NL'),
-    Locale('no'),
-    Locale('no', 'NO'),
-    Locale('pl'),
-    Locale('pl', 'PL'),
-    Locale('pt'),
-    Locale('pt', 'BR'),
-    Locale('pt', 'PT'),
-    Locale('ro'),
-    Locale('ro', 'RO'),
     Locale('ru'),
-    Locale('ru', 'RU'),
-    Locale('sk'),
-    Locale('sk', 'SK'),
-    Locale('sl'),
-    Locale('sl', 'SI'),
-    Locale('sr'),
-    Locale('sr', 'CS'),
-    Locale('sv'),
-    Locale('sv', 'SE'),
-    Locale('th'),
-    Locale('th', 'TH'),
-    Locale('tr'),
-    Locale('tr', 'TR'),
-    Locale('uk'),
-    Locale('uk', 'UA'),
-    Locale('vi'),
-    Locale('vi', 'VN'),
-    Locale('zh'),
-    Locale('zh', 'CN'),
-    Locale('zh', 'TW')
+    Locale('ru', 'RU')
   ];
-
-  /// InvenTree application title string
-  ///
-  /// In en, this message translates to:
-  /// **'InvenTree'**
-  String get appTitle;
-
-  /// OK
-  ///
-  /// In en, this message translates to:
-  /// **'OK'**
-  String get ok;
 
   /// No description provided for @about.
   ///
@@ -255,6 +138,18 @@ abstract class I18N {
   /// **'Address'**
   String get address;
 
+  /// No description provided for @allocateStock.
+  ///
+  /// In en, this message translates to:
+  /// **'Allocate Stock'**
+  String get allocateStock;
+
+  /// No description provided for @allocated.
+  ///
+  /// In en, this message translates to:
+  /// **'Allocated'**
+  String get allocated;
+
   /// No description provided for @appAbout.
   ///
   /// In en, this message translates to:
@@ -272,18 +167,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'App Details'**
   String get appDetails;
-
-  /// No description provided for @allocated.
-  ///
-  /// In en, this message translates to:
-  /// **'Allocated'**
-  String get allocated;
-
-  /// No description provided for @allocateStock.
-  ///
-  /// In en, this message translates to:
-  /// **'Allocate Stock'**
-  String get allocateStock;
 
   /// No description provided for @appReleaseNotes.
   ///
@@ -303,6 +186,18 @@ abstract class I18N {
   /// **'Configure InvenTree app settings'**
   String get appSettingsDetails;
 
+  /// InvenTree application title string
+  ///
+  /// In en, this message translates to:
+  /// **'InvenTree'**
+  String get appTitle;
+
+  /// No description provided for @assignedSerial.
+  ///
+  /// In en, this message translates to:
+  /// **'Assigned serial'**
+  String get assignedSerial;
+
   /// No description provided for @assignedToMe.
   ///
   /// In en, this message translates to:
@@ -314,12 +209,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Show orders which are assigned to me'**
   String get assignedToMeDetail;
-
-  /// No description provided for @attachments.
-  ///
-  /// In en, this message translates to:
-  /// **'Attachments'**
-  String get attachments;
 
   /// Attach an image
   ///
@@ -345,11 +234,23 @@ abstract class I18N {
   /// **'Select attachment'**
   String get attachmentSelect;
 
+  /// No description provided for @attachments.
+  ///
+  /// In en, this message translates to:
+  /// **'Attachments'**
+  String get attachments;
+
   /// No description provided for @attention.
   ///
   /// In en, this message translates to:
   /// **'Attention'**
   String get attention;
+
+  /// No description provided for @attentionNeeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Attention needed'**
+  String get attentionNeeded;
 
   /// No description provided for @available.
   ///
@@ -362,18 +263,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Available Stock'**
   String get availableStock;
-
-  /// No description provided for @barcodes.
-  ///
-  /// In en, this message translates to:
-  /// **'Barcodes'**
-  String get barcodes;
-
-  /// No description provided for @barcodeSettings.
-  ///
-  /// In en, this message translates to:
-  /// **'Barcode Settings'**
-  String get barcodeSettings;
 
   /// No description provided for @barcodeAssign.
   ///
@@ -423,29 +312,11 @@ abstract class I18N {
   /// **'Barcode not assigned'**
   String get barcodeNotAssigned;
 
-  /// No description provided for @barcodeScanPart.
-  ///
-  /// In en, this message translates to:
-  /// **'Scan part barcode'**
-  String get barcodeScanPart;
-
   /// No description provided for @barcodeReceivePart.
   ///
   /// In en, this message translates to:
   /// **'Scan barcode to receive part'**
   String get barcodeReceivePart;
-
-  /// No description provided for @barcodeScanPaused.
-  ///
-  /// In en, this message translates to:
-  /// **'Barcode scanning paused'**
-  String get barcodeScanPaused;
-
-  /// No description provided for @barcodeScanPause.
-  ///
-  /// In en, this message translates to:
-  /// **'Tap or hold to pause scanning'**
-  String get barcodeScanPause;
 
   /// No description provided for @barcodeScanAssign.
   ///
@@ -489,11 +360,47 @@ abstract class I18N {
   /// **'Scan stock items into this location'**
   String get barcodeScanInItems;
 
+  /// No description provided for @barcodeScanIntoLocationFailure.
+  ///
+  /// In en, this message translates to:
+  /// **'Item not scanned in'**
+  String get barcodeScanIntoLocationFailure;
+
+  /// No description provided for @barcodeScanIntoLocationSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Scanned into location'**
+  String get barcodeScanIntoLocationSuccess;
+
+  /// No description provided for @barcodeScanItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan stock item'**
+  String get barcodeScanItem;
+
   /// No description provided for @barcodeScanLocation.
   ///
   /// In en, this message translates to:
   /// **'Scan stock location'**
   String get barcodeScanLocation;
+
+  /// No description provided for @barcodeScanPart.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan part barcode'**
+  String get barcodeScanPart;
+
+  /// No description provided for @barcodeScanPause.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap or hold to pause scanning'**
+  String get barcodeScanPause;
+
+  /// No description provided for @barcodeScanPaused.
+  ///
+  /// In en, this message translates to:
+  /// **'Barcode scanning paused'**
+  String get barcodeScanPaused;
 
   /// No description provided for @barcodeScanSingle.
   ///
@@ -507,23 +414,11 @@ abstract class I18N {
   /// **'Pause barcode scanner after each scan'**
   String get barcodeScanSingleDetail;
 
-  /// No description provided for @barcodeScanIntoLocationSuccess.
+  /// No description provided for @barcodeSettings.
   ///
   /// In en, this message translates to:
-  /// **'Scanned into location'**
-  String get barcodeScanIntoLocationSuccess;
-
-  /// No description provided for @barcodeScanIntoLocationFailure.
-  ///
-  /// In en, this message translates to:
-  /// **'Item not scanned in'**
-  String get barcodeScanIntoLocationFailure;
-
-  /// No description provided for @barcodeScanItem.
-  ///
-  /// In en, this message translates to:
-  /// **'Scan stock item'**
-  String get barcodeScanItem;
+  /// **'Barcode Settings'**
+  String get barcodeSettings;
 
   /// No description provided for @barcodeTones.
   ///
@@ -542,6 +437,12 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Barcode is not recognized'**
   String get barcodeUnknown;
+
+  /// No description provided for @barcodes.
+  ///
+  /// In en, this message translates to:
+  /// **'Barcodes'**
+  String get barcodes;
 
   /// No description provided for @batchCode.
   ///
@@ -572,6 +473,30 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Build'**
   String get build;
+
+  /// No description provided for @buildConsumed.
+  ///
+  /// In en, this message translates to:
+  /// **'Build consumed'**
+  String get buildConsumed;
+
+  /// No description provided for @buildOutputCompleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Build output completed'**
+  String get buildOutputCompleted;
+
+  /// No description provided for @buildOutputCreated.
+  ///
+  /// In en, this message translates to:
+  /// **'Build output created'**
+  String get buildOutputCreated;
+
+  /// No description provided for @buildOutputRejected.
+  ///
+  /// In en, this message translates to:
+  /// **'Build output rejected'**
+  String get buildOutputRejected;
 
   /// No description provided for @building.
   ///
@@ -609,6 +534,12 @@ abstract class I18N {
   /// **'Cancel Order'**
   String get cancelOrder;
 
+  /// No description provided for @cancelled.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancelled'**
+  String get cancelled;
+
   /// No description provided for @category.
   ///
   /// In en, this message translates to:
@@ -632,6 +563,24 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Part category updated'**
   String get categoryUpdated;
+
+  /// No description provided for @colorScheme.
+  ///
+  /// In en, this message translates to:
+  /// **'Color Scheme'**
+  String get colorScheme;
+
+  /// No description provided for @colorSchemeDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Select color scheme'**
+  String get colorSchemeDetail;
+
+  /// No description provided for @companies.
+  ///
+  /// In en, this message translates to:
+  /// **'Companies'**
+  String get companies;
 
   /// No description provided for @company.
   ///
@@ -663,11 +612,11 @@ abstract class I18N {
   /// **'Company details updated'**
   String get companyUpdated;
 
-  /// No description provided for @companies.
+  /// No description provided for @complete.
   ///
   /// In en, this message translates to:
-  /// **'Companies'**
-  String get companies;
+  /// **'Complete'**
+  String get complete;
 
   /// No description provided for @completionDate.
   ///
@@ -699,6 +648,12 @@ abstract class I18N {
   /// **'Connection Refused'**
   String get connectionRefused;
 
+  /// No description provided for @convertedToVariant.
+  ///
+  /// In en, this message translates to:
+  /// **'Converted to variant'**
+  String get convertedToVariant;
+
   /// Count
   ///
   /// In en, this message translates to:
@@ -710,6 +665,18 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Count Stock'**
   String get countStock;
+
+  /// No description provided for @countStocksInLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Counted stocks in location'**
+  String get countStocksInLocation;
+
+  /// No description provided for @created.
+  ///
+  /// In en, this message translates to:
+  /// **'Created'**
+  String get created;
 
   /// No description provided for @credits.
   ///
@@ -723,35 +690,23 @@ abstract class I18N {
   /// **'Customer'**
   String get customer;
 
-  /// No description provided for @customers.
-  ///
-  /// In en, this message translates to:
-  /// **'Customers'**
-  String get customers;
-
   /// No description provided for @customerReference.
   ///
   /// In en, this message translates to:
   /// **'Customer Reference'**
   String get customerReference;
 
+  /// No description provided for @customers.
+  ///
+  /// In en, this message translates to:
+  /// **'Customers'**
+  String get customers;
+
   /// No description provided for @damaged.
   ///
   /// In en, this message translates to:
   /// **'Damaged'**
   String get damaged;
-
-  /// No description provided for @colorScheme.
-  ///
-  /// In en, this message translates to:
-  /// **'Color Scheme'**
-  String get colorScheme;
-
-  /// No description provided for @colorSchemeDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Select color scheme'**
-  String get colorSchemeDetail;
 
   /// No description provided for @darkMode.
   ///
@@ -825,17 +780,17 @@ abstract class I18N {
   /// **'Documentation'**
   String get documentation;
 
-  /// No description provided for @downloading.
-  ///
-  /// In en, this message translates to:
-  /// **'Downloading File'**
-  String get downloading;
-
   /// No description provided for @downloadError.
   ///
   /// In en, this message translates to:
   /// **'Download Error'**
   String get downloadError;
+
+  /// No description provided for @downloading.
+  ///
+  /// In en, this message translates to:
+  /// **'Downloading File'**
+  String get downloading;
 
   /// edit
   ///
@@ -854,6 +809,18 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Edit Category'**
   String get editCategory;
+
+  /// No description provided for @editItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Stock Item'**
+  String get editItem;
+
+  /// No description provided for @editLineItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Line Item'**
+  String get editLineItem;
 
   /// No description provided for @editLocation.
   ///
@@ -879,17 +846,11 @@ abstract class I18N {
   /// **'Edit Part'**
   String get editPart;
 
-  /// No description provided for @editItem.
+  /// No description provided for @edited.
   ///
   /// In en, this message translates to:
-  /// **'Edit Stock Item'**
-  String get editItem;
-
-  /// No description provided for @editLineItem.
-  ///
-  /// In en, this message translates to:
-  /// **'Edit Line Item'**
-  String get editLineItem;
+  /// **'Edited'**
+  String get edited;
 
   /// No description provided for @enterPassword.
   ///
@@ -933,23 +894,11 @@ abstract class I18N {
   /// **'Error fetching data from server'**
   String get errorFetch;
 
-  /// No description provided for @errorUserRoles.
-  ///
-  /// In en, this message translates to:
-  /// **'Error requesting user roles from server'**
-  String get errorUserRoles;
-
   /// No description provided for @errorPluginInfo.
   ///
   /// In en, this message translates to:
   /// **'Error requesting plugin data from server'**
   String get errorPluginInfo;
-
-  /// No description provided for @errorReporting.
-  ///
-  /// In en, this message translates to:
-  /// **'Error Reporting'**
-  String get errorReporting;
 
   /// No description provided for @errorReportUpload.
   ///
@@ -962,6 +911,18 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Upload anonymous error reports and crash logs'**
   String get errorReportUploadDetails;
+
+  /// No description provided for @errorReporting.
+  ///
+  /// In en, this message translates to:
+  /// **'Error Reporting'**
+  String get errorReporting;
+
+  /// No description provided for @errorUserRoles.
+  ///
+  /// In en, this message translates to:
+  /// **'Error requesting user roles from server'**
+  String get errorUserRoles;
 
   /// No description provided for @expiryDate.
   ///
@@ -1113,6 +1074,12 @@ abstract class I18N {
   /// **'Filtering Options'**
   String get filteringOptions;
 
+  /// No description provided for @formError.
+  ///
+  /// In en, this message translates to:
+  /// **'Form Error'**
+  String get formError;
+
   /// No description provided for @formatException.
   ///
   /// In en, this message translates to:
@@ -1124,12 +1091,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'JSON data format exception'**
   String get formatExceptionJson;
-
-  /// No description provided for @formError.
-  ///
-  /// In en, this message translates to:
-  /// **'Form Error'**
-  String get formError;
 
   /// history
   ///
@@ -1154,6 +1115,30 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Configure home screen settings'**
   String get homeScreenSettings;
+
+  /// No description provided for @homeShowCustomers.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Customers'**
+  String get homeShowCustomers;
+
+  /// No description provided for @homeShowCustomersDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Show customers button on home screen'**
+  String get homeShowCustomersDescription;
+
+  /// No description provided for @homeShowManufacturers.
+  ///
+  /// In en, this message translates to:
+  /// **'Show Manufacturers'**
+  String get homeShowManufacturers;
+
+  /// No description provided for @homeShowManufacturersDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Show manufacturers button on home screen'**
+  String get homeShowManufacturersDescription;
 
   /// No description provided for @homeShowPo.
   ///
@@ -1203,30 +1188,6 @@ abstract class I18N {
   /// **'Show suppliers button on home screen'**
   String get homeShowSuppliersDescription;
 
-  /// No description provided for @homeShowManufacturers.
-  ///
-  /// In en, this message translates to:
-  /// **'Show Manufacturers'**
-  String get homeShowManufacturers;
-
-  /// No description provided for @homeShowManufacturersDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Show manufacturers button on home screen'**
-  String get homeShowManufacturersDescription;
-
-  /// No description provided for @homeShowCustomers.
-  ///
-  /// In en, this message translates to:
-  /// **'Show Customers'**
-  String get homeShowCustomers;
-
-  /// No description provided for @homeShowCustomersDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Show customers button on home screen'**
-  String get homeShowCustomersDescription;
-
   /// No description provided for @imageUploadFailure.
   ///
   /// In en, this message translates to:
@@ -1238,6 +1199,24 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Image uploaded'**
   String get imageUploadSuccess;
+
+  /// No description provided for @inProduction.
+  ///
+  /// In en, this message translates to:
+  /// **'In Production'**
+  String get inProduction;
+
+  /// No description provided for @inProductionDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'This stock item is in production'**
+  String get inProductionDetail;
+
+  /// No description provided for @inProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'In progress'**
+  String get inProgress;
 
   /// No description provided for @inactive.
   ///
@@ -1287,35 +1266,35 @@ abstract class I18N {
   /// **'Incomplete profile details'**
   String get incompleteDetails;
 
-  /// No description provided for @internalPartNumber.
-  ///
-  /// In en, this message translates to:
-  /// **'Internal Part Number'**
-  String get internalPartNumber;
-
   /// No description provided for @info.
   ///
   /// In en, this message translates to:
   /// **'Info'**
   String get info;
 
-  /// No description provided for @inProduction.
+  /// No description provided for @installedChildItem.
   ///
   /// In en, this message translates to:
-  /// **'In Production'**
-  String get inProduction;
+  /// **'Installed child item'**
+  String get installedChildItem;
 
-  /// No description provided for @inProductionDetail.
+  /// No description provided for @installedIntoAssembly.
   ///
   /// In en, this message translates to:
-  /// **'This stock item is in production'**
-  String get inProductionDetail;
+  /// **'Installed into assembly'**
+  String get installedIntoAssembly;
 
   /// No description provided for @internalPart.
   ///
   /// In en, this message translates to:
   /// **'Internal Part'**
   String get internalPart;
+
+  /// No description provided for @internalPartNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Internal Part Number'**
+  String get internalPartNumber;
 
   /// No description provided for @invalidHost.
   ///
@@ -1341,17 +1320,17 @@ abstract class I18N {
   /// **'Invalid Part Category'**
   String get invalidPartCategory;
 
-  /// No description provided for @invalidStockLocation.
-  ///
-  /// In en, this message translates to:
-  /// **'Invalid Stock Location'**
-  String get invalidStockLocation;
-
   /// No description provided for @invalidStockItem.
   ///
   /// In en, this message translates to:
   /// **'Invalid Stock Item'**
   String get invalidStockItem;
+
+  /// No description provided for @invalidStockLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid Stock Location'**
+  String get invalidStockLocation;
 
   /// No description provided for @invalidSupplierPart.
   ///
@@ -1383,17 +1362,17 @@ abstract class I18N {
   /// **'Issue Order'**
   String get issueOrder;
 
-  /// No description provided for @itemInLocation.
-  ///
-  /// In en, this message translates to:
-  /// **'Item already in location'**
-  String get itemInLocation;
-
   /// No description provided for @itemDeleted.
   ///
   /// In en, this message translates to:
   /// **'Item has been removed'**
   String get itemDeleted;
+
+  /// No description provided for @itemInLocation.
+  ///
+  /// In en, this message translates to:
+  /// **'Item already in location'**
+  String get itemInLocation;
 
   /// No description provided for @itemUpdated.
   ///
@@ -1419,11 +1398,11 @@ abstract class I18N {
   /// **'Enable label printing'**
   String get labelPrintingDetail;
 
-  /// No description provided for @labelTemplate.
+  /// No description provided for @labelSelectPrinter.
   ///
   /// In en, this message translates to:
-  /// **'Label Template'**
-  String get labelTemplate;
+  /// **'Select Label Printer'**
+  String get labelSelectPrinter;
 
   /// No description provided for @labelSelectTemplate.
   ///
@@ -1431,11 +1410,11 @@ abstract class I18N {
   /// **'Select Label Template'**
   String get labelSelectTemplate;
 
-  /// No description provided for @labelSelectPrinter.
+  /// No description provided for @labelTemplate.
   ///
   /// In en, this message translates to:
-  /// **'Select Label Printer'**
-  String get labelSelectPrinter;
+  /// **'Label Template'**
+  String get labelTemplate;
 
   /// No description provided for @language.
   ///
@@ -1467,17 +1446,17 @@ abstract class I18N {
   /// **'Last Updated'**
   String get lastUpdated;
 
+  /// No description provided for @legacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Legacy'**
+  String get legacy;
+
   /// No description provided for @level.
   ///
   /// In en, this message translates to:
   /// **'Level'**
   String get level;
-
-  /// No description provided for @lineItemAdd.
-  ///
-  /// In en, this message translates to:
-  /// **'Add Line Item'**
-  String get lineItemAdd;
 
   /// No description provided for @lineItem.
   ///
@@ -1485,17 +1464,29 @@ abstract class I18N {
   /// **'Line Item'**
   String get lineItem;
 
-  /// No description provided for @lineItems.
+  /// No description provided for @lineItemAdd.
   ///
   /// In en, this message translates to:
-  /// **'Line Items'**
-  String get lineItems;
+  /// **'Add Line Item'**
+  String get lineItemAdd;
 
   /// No description provided for @lineItemUpdated.
   ///
   /// In en, this message translates to:
   /// **'Line item updated'**
   String get lineItemUpdated;
+
+  /// No description provided for @lineItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Line Items'**
+  String get lineItems;
+
+  /// No description provided for @link.
+  ///
+  /// In en, this message translates to:
+  /// **'Link'**
+  String get link;
 
   /// No description provided for @locateItem.
   ///
@@ -1551,17 +1542,17 @@ abstract class I18N {
   /// **'Username and password are not stored locally'**
   String get loginEnterDetails;
 
-  /// No description provided for @link.
-  ///
-  /// In en, this message translates to:
-  /// **'Link'**
-  String get link;
-
   /// No description provided for @lost.
   ///
   /// In en, this message translates to:
   /// **'Lost'**
   String get lost;
+
+  /// No description provided for @manufacturer.
+  ///
+  /// In en, this message translates to:
+  /// **'Manufacturer'**
+  String get manufacturer;
 
   /// No description provided for @manufacturerPart.
   ///
@@ -1581,17 +1572,17 @@ abstract class I18N {
   /// **'Manufacturer Part Number'**
   String get manufacturerPartNumber;
 
-  /// No description provided for @manufacturer.
-  ///
-  /// In en, this message translates to:
-  /// **'Manufacturer'**
-  String get manufacturer;
-
   /// No description provided for @manufacturers.
   ///
   /// In en, this message translates to:
   /// **'Manufacturers'**
   String get manufacturers;
+
+  /// No description provided for @mergedStockItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Merged stock items'**
+  String get mergedStockItems;
 
   /// No description provided for @missingData.
   ///
@@ -1604,30 +1595,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Name'**
   String get name;
-
-  /// No description provided for @notConnected.
-  ///
-  /// In en, this message translates to:
-  /// **'Not Connected'**
-  String get notConnected;
-
-  /// Notes
-  ///
-  /// In en, this message translates to:
-  /// **'Notes'**
-  String get notes;
-
-  /// No description provided for @notifications.
-  ///
-  /// In en, this message translates to:
-  /// **'Notifications'**
-  String get notifications;
-
-  /// No description provided for @notificationsEmpty.
-  ///
-  /// In en, this message translates to:
-  /// **'No unread notifications'**
-  String get notificationsEmpty;
 
   /// No description provided for @noResponse.
   ///
@@ -1653,11 +1620,47 @@ abstract class I18N {
   /// **'No subcategories available'**
   String get noSubcategoriesAvailable;
 
+  /// No description provided for @notConnected.
+  ///
+  /// In en, this message translates to:
+  /// **'Not Connected'**
+  String get notConnected;
+
+  /// Notes
+  ///
+  /// In en, this message translates to:
+  /// **'Notes'**
+  String get notes;
+
+  /// No description provided for @notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
+
+  /// No description provided for @notificationsEmpty.
+  ///
+  /// In en, this message translates to:
+  /// **'No unread notifications'**
+  String get notificationsEmpty;
+
   /// No description provided for @numberInvalid.
   ///
   /// In en, this message translates to:
   /// **'Invalid number'**
   String get numberInvalid;
+
+  /// OK
+  ///
+  /// In en, this message translates to:
+  /// **'OK'**
+  String get ok;
+
+  /// No description provided for @onHold.
+  ///
+  /// In en, this message translates to:
+  /// **'On hold'**
+  String get onHold;
 
   /// No description provided for @onOrder.
   ///
@@ -1725,17 +1728,17 @@ abstract class I18N {
   /// **'Show overdue orders'**
   String get overdueDetail;
 
-  /// No description provided for @packaging.
-  ///
-  /// In en, this message translates to:
-  /// **'Packaging'**
-  String get packaging;
-
   /// No description provided for @packageName.
   ///
   /// In en, this message translates to:
   /// **'Package Name'**
   String get packageName;
+
+  /// No description provided for @packaging.
+  ///
+  /// In en, this message translates to:
+  /// **'Packaging'**
+  String get packaging;
 
   /// No description provided for @parameters.
   ///
@@ -1773,71 +1776,11 @@ abstract class I18N {
   /// **'Part'**
   String get part;
 
-  /// No description provided for @partCreate.
+  /// No description provided for @partCategories.
   ///
   /// In en, this message translates to:
-  /// **'New Part'**
-  String get partCreate;
-
-  /// No description provided for @partCreateDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Create new part in this category'**
-  String get partCreateDetail;
-
-  /// No description provided for @partEdited.
-  ///
-  /// In en, this message translates to:
-  /// **'Part updated'**
-  String get partEdited;
-
-  /// Part (multiple)
-  ///
-  /// In en, this message translates to:
-  /// **'Parts'**
-  String get parts;
-
-  /// No description provided for @partNotSalable.
-  ///
-  /// In en, this message translates to:
-  /// **'Part not marked as salable'**
-  String get partNotSalable;
-
-  /// No description provided for @partsNone.
-  ///
-  /// In en, this message translates to:
-  /// **'No Parts'**
-  String get partsNone;
-
-  /// No description provided for @partNoResults.
-  ///
-  /// In en, this message translates to:
-  /// **'No parts matching query'**
-  String get partNoResults;
-
-  /// No description provided for @partSettings.
-  ///
-  /// In en, this message translates to:
-  /// **'Part Settings'**
-  String get partSettings;
-
-  /// No description provided for @partsStarred.
-  ///
-  /// In en, this message translates to:
-  /// **'Subscribed Parts'**
-  String get partsStarred;
-
-  /// No description provided for @partsStarredNone.
-  ///
-  /// In en, this message translates to:
-  /// **'No starred parts available'**
-  String get partsStarredNone;
-
-  /// No description provided for @partSuppliers.
-  ///
-  /// In en, this message translates to:
-  /// **'Part Suppliers'**
-  String get partSuppliers;
+  /// **'Part Categories'**
+  String get partCategories;
 
   /// No description provided for @partCategory.
   ///
@@ -1851,11 +1794,17 @@ abstract class I18N {
   /// **'Top level part category'**
   String get partCategoryTopLevel;
 
-  /// No description provided for @partCategories.
+  /// No description provided for @partCreate.
   ///
   /// In en, this message translates to:
-  /// **'Part Categories'**
-  String get partCategories;
+  /// **'New Part'**
+  String get partCreate;
+
+  /// No description provided for @partCreateDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Create new part in this category'**
+  String get partCreateDetail;
 
   /// No description provided for @partDetails.
   ///
@@ -1863,17 +1812,71 @@ abstract class I18N {
   /// **'Part Details'**
   String get partDetails;
 
+  /// No description provided for @partEdited.
+  ///
+  /// In en, this message translates to:
+  /// **'Part updated'**
+  String get partEdited;
+
+  /// No description provided for @partNoResults.
+  ///
+  /// In en, this message translates to:
+  /// **'No parts matching query'**
+  String get partNoResults;
+
+  /// No description provided for @partNotSalable.
+  ///
+  /// In en, this message translates to:
+  /// **'Part not marked as salable'**
+  String get partNotSalable;
+
   /// No description provided for @partNotes.
   ///
   /// In en, this message translates to:
   /// **'Part Notes'**
   String get partNotes;
 
+  /// No description provided for @partSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Part Settings'**
+  String get partSettings;
+
   /// part stock
   ///
   /// In en, this message translates to:
   /// **'Part Stock'**
   String get partStock;
+
+  /// No description provided for @partSuppliers.
+  ///
+  /// In en, this message translates to:
+  /// **'Part Suppliers'**
+  String get partSuppliers;
+
+  /// Part (multiple)
+  ///
+  /// In en, this message translates to:
+  /// **'Parts'**
+  String get parts;
+
+  /// No description provided for @partsNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No Parts'**
+  String get partsNone;
+
+  /// No description provided for @partsStarred.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscribed Parts'**
+  String get partsStarred;
+
+  /// No description provided for @partsStarredNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No starred parts available'**
+  String get partsStarredNone;
 
   /// No description provided for @password.
   ///
@@ -1887,6 +1890,12 @@ abstract class I18N {
   /// **'Password cannot be empty'**
   String get passwordEmpty;
 
+  /// No description provided for @pending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get pending;
+
   /// No description provided for @permissionAccountDenied.
   ///
   /// In en, this message translates to:
@@ -1899,11 +1908,11 @@ abstract class I18N {
   /// **'Permission Required'**
   String get permissionRequired;
 
-  /// No description provided for @printLabel.
+  /// No description provided for @placed.
   ///
   /// In en, this message translates to:
-  /// **'Print Label'**
-  String get printLabel;
+  /// **'Placed'**
+  String get placed;
 
   /// No description provided for @plugin.
   ///
@@ -1928,6 +1937,12 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'The server supports custom plugins'**
   String get pluginSupportDetail;
+
+  /// No description provided for @printLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Print Label'**
+  String get printLabel;
 
   /// No description provided for @printLabelFailure.
   ///
@@ -1959,17 +1974,17 @@ abstract class I18N {
   /// **'Connect to Server'**
   String get profileConnect;
 
-  /// No description provided for @profileEdit.
-  ///
-  /// In en, this message translates to:
-  /// **'Edit Server Profile'**
-  String get profileEdit;
-
   /// No description provided for @profileDelete.
   ///
   /// In en, this message translates to:
   /// **'Delete Server Profile'**
   String get profileDelete;
+
+  /// No description provided for @profileEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Server Profile'**
+  String get profileEdit;
 
   /// No description provided for @profileLogout.
   ///
@@ -2019,6 +2034,12 @@ abstract class I18N {
   /// **'Project Code'**
   String get projectCode;
 
+  /// No description provided for @purchaseOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Order'**
+  String get purchaseOrder;
+
   /// No description provided for @purchaseOrderConfirmScan.
   ///
   /// In en, this message translates to:
@@ -2030,36 +2051,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Confirm details when scanning in items'**
   String get purchaseOrderConfirmScanDetail;
-
-  /// No description provided for @purchaseOrderEnable.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable Purchase Orders'**
-  String get purchaseOrderEnable;
-
-  /// No description provided for @purchaseOrderEnableDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable purchase order functionality'**
-  String get purchaseOrderEnableDetail;
-
-  /// No description provided for @purchaseOrderShowCamera.
-  ///
-  /// In en, this message translates to:
-  /// **'Camera Shortcut'**
-  String get purchaseOrderShowCamera;
-
-  /// No description provided for @purchaseOrderShowCameraDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable image upload shortcut on purchase order screen'**
-  String get purchaseOrderShowCameraDetail;
-
-  /// No description provided for @purchaseOrder.
-  ///
-  /// In en, this message translates to:
-  /// **'Purchase Order'**
-  String get purchaseOrder;
 
   /// No description provided for @purchaseOrderCreate.
   ///
@@ -2073,23 +2064,47 @@ abstract class I18N {
   /// **'Edit Purchase Order'**
   String get purchaseOrderEdit;
 
+  /// No description provided for @purchaseOrderEnable.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Purchase Orders'**
+  String get purchaseOrderEnable;
+
+  /// No description provided for @purchaseOrderEnableDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable purchase order functionality'**
+  String get purchaseOrderEnableDetail;
+
   /// No description provided for @purchaseOrderSettings.
   ///
   /// In en, this message translates to:
   /// **'Purchase order settings'**
   String get purchaseOrderSettings;
 
-  /// No description provided for @purchaseOrders.
+  /// No description provided for @purchaseOrderShowCamera.
   ///
   /// In en, this message translates to:
-  /// **'Purchase Orders'**
-  String get purchaseOrders;
+  /// **'Camera Shortcut'**
+  String get purchaseOrderShowCamera;
+
+  /// No description provided for @purchaseOrderShowCameraDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable image upload shortcut on purchase order screen'**
+  String get purchaseOrderShowCameraDetail;
 
   /// No description provided for @purchaseOrderUpdated.
   ///
   /// In en, this message translates to:
   /// **'Purchase order updated'**
   String get purchaseOrderUpdated;
+
+  /// No description provided for @purchaseOrders.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchase Orders'**
+  String get purchaseOrders;
 
   /// No description provided for @purchasePrice.
   ///
@@ -2127,6 +2142,12 @@ abstract class I18N {
   /// **'Quantity must be positive'**
   String get quantityPositive;
 
+  /// No description provided for @quarantined.
+  ///
+  /// In en, this message translates to:
+  /// **'Quarantined'**
+  String get quarantined;
+
   /// No description provided for @queryEmpty.
   ///
   /// In en, this message translates to:
@@ -2139,23 +2160,29 @@ abstract class I18N {
   /// **'No results for query'**
   String get queryNoResults;
 
+  /// No description provided for @receiveItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Receive Item'**
+  String get receiveItem;
+
   /// No description provided for @received.
   ///
   /// In en, this message translates to:
   /// **'Received'**
   String get received;
 
+  /// No description provided for @receivedAgainstPurchaseOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Received against purchase order'**
+  String get receivedAgainstPurchaseOrder;
+
   /// No description provided for @receivedFilterDetail.
   ///
   /// In en, this message translates to:
   /// **'Show received items'**
   String get receivedFilterDetail;
-
-  /// No description provided for @receiveItem.
-  ///
-  /// In en, this message translates to:
-  /// **'Receive Item'**
-  String get receiveItem;
 
   /// No description provided for @receivedItem.
   ///
@@ -2205,6 +2232,18 @@ abstract class I18N {
   /// **'Remove Stock'**
   String get removeStock;
 
+  /// No description provided for @removedChildItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Removed child item'**
+  String get removedChildItem;
+
+  /// No description provided for @removedFromAssembly.
+  ///
+  /// In en, this message translates to:
+  /// **'Removed from assembly'**
+  String get removedFromAssembly;
+
   /// No description provided for @reportBug.
   ///
   /// In en, this message translates to:
@@ -2216,18 +2255,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Submit bug report (requires GitHub account)'**
   String get reportBugDescription;
-
-  /// No description provided for @responsible.
-  ///
-  /// In en, this message translates to:
-  /// **'Responsible'**
-  String get responsible;
-
-  /// No description provided for @results.
-  ///
-  /// In en, this message translates to:
-  /// **'Results'**
-  String get results;
 
   /// No description provided for @request.
   ///
@@ -2349,11 +2376,23 @@ abstract class I18N {
   /// **'Unknown Response'**
   String get responseUnknown;
 
+  /// No description provided for @responsible.
+  ///
+  /// In en, this message translates to:
+  /// **'Responsible'**
+  String get responsible;
+
   ///
   ///
   /// In en, this message translates to:
   /// **'Result'**
   String get result;
+
+  /// No description provided for @results.
+  ///
+  /// In en, this message translates to:
+  /// **'Results'**
+  String get results;
 
   /// No description provided for @returned.
   ///
@@ -2361,47 +2400,23 @@ abstract class I18N {
   /// **'Returned'**
   String get returned;
 
+  /// No description provided for @returnedAgainstReturnOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Returned against return order'**
+  String get returnedAgainstReturnOrder;
+
+  /// No description provided for @returnedFromCustomer.
+  ///
+  /// In en, this message translates to:
+  /// **'Returned from customer'**
+  String get returnedFromCustomer;
+
   /// No description provided for @salesOrder.
   ///
   /// In en, this message translates to:
   /// **'Sales Order'**
   String get salesOrder;
-
-  /// No description provided for @salesOrders.
-  ///
-  /// In en, this message translates to:
-  /// **'Sales Orders'**
-  String get salesOrders;
-
-  /// No description provided for @salesOrderEnable.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable Sales Orders'**
-  String get salesOrderEnable;
-
-  /// No description provided for @salesOrderEnableDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable sales order functionality'**
-  String get salesOrderEnableDetail;
-
-  /// No description provided for @salesOrderShowCamera.
-  ///
-  /// In en, this message translates to:
-  /// **'Camera Shortcut'**
-  String get salesOrderShowCamera;
-
-  /// No description provided for @salesOrderShowCameraDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Enable image upload shortcut on sales order screen'**
-  String get salesOrderShowCameraDetail;
-
-  /// No description provided for @salesOrderSettings.
-  ///
-  /// In en, this message translates to:
-  /// **'Sales order settings'**
-  String get salesOrderSettings;
 
   /// No description provided for @salesOrderCreate.
   ///
@@ -2415,11 +2430,47 @@ abstract class I18N {
   /// **'Edit Sales Order'**
   String get salesOrderEdit;
 
+  /// No description provided for @salesOrderEnable.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable Sales Orders'**
+  String get salesOrderEnable;
+
+  /// No description provided for @salesOrderEnableDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable sales order functionality'**
+  String get salesOrderEnableDetail;
+
+  /// No description provided for @salesOrderSettings.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales order settings'**
+  String get salesOrderSettings;
+
+  /// No description provided for @salesOrderShowCamera.
+  ///
+  /// In en, this message translates to:
+  /// **'Camera Shortcut'**
+  String get salesOrderShowCamera;
+
+  /// No description provided for @salesOrderShowCameraDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable image upload shortcut on sales order screen'**
+  String get salesOrderShowCameraDetail;
+
   /// No description provided for @salesOrderUpdated.
   ///
   /// In en, this message translates to:
   /// **'Sales order updated'**
   String get salesOrderUpdated;
+
+  /// No description provided for @salesOrders.
+  ///
+  /// In en, this message translates to:
+  /// **'Sales Orders'**
+  String get salesOrders;
 
   /// Save
   ///
@@ -2433,12 +2484,6 @@ abstract class I18N {
   /// **'Scan Barcode'**
   String get scanBarcode;
 
-  /// No description provided for @scanSupplierPart.
-  ///
-  /// In en, this message translates to:
-  /// **'Scan supplier part barcode'**
-  String get scanSupplierPart;
-
   /// No description provided for @scanIntoLocation.
   ///
   /// In en, this message translates to:
@@ -2450,6 +2495,18 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Scan this item into location'**
   String get scanIntoLocationDetail;
+
+  /// No description provided for @scanReceivedParts.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan Received Parts'**
+  String get scanReceivedParts;
+
+  /// No description provided for @scanSupplierPart.
+  ///
+  /// In en, this message translates to:
+  /// **'Scan supplier part barcode'**
+  String get scanSupplierPart;
 
   /// No description provided for @scannerExternal.
   ///
@@ -2463,23 +2520,11 @@ abstract class I18N {
   /// **'Use external scanner to read barcodes (wedge mode)'**
   String get scannerExternalDetail;
 
-  /// No description provided for @scanReceivedParts.
-  ///
-  /// In en, this message translates to:
-  /// **'Scan Received Parts'**
-  String get scanReceivedParts;
-
   /// search
   ///
   /// In en, this message translates to:
   /// **'Search'**
   String get search;
-
-  /// No description provided for @searching.
-  ///
-  /// In en, this message translates to:
-  /// **'Searching'**
-  String get searching;
 
   /// No description provided for @searchLocation.
   ///
@@ -2498,6 +2543,12 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Search Stock'**
   String get searchStock;
+
+  /// No description provided for @searching.
+  ///
+  /// In en, this message translates to:
+  /// **'Searching'**
+  String get searching;
 
   /// No description provided for @select.
   ///
@@ -2528,6 +2579,12 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Send'**
   String get send;
+
+  /// No description provided for @sentToCustomer.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent to customer'**
+  String get sentToCustomer;
 
   /// No description provided for @serialNumber.
   ///
@@ -2601,6 +2658,12 @@ abstract class I18N {
   /// **'Could not connect to server'**
   String get serverCouldNotConnect;
 
+  /// No description provided for @serverDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Server Details'**
+  String get serverDetails;
+
   /// No description provided for @serverEmpty.
   ///
   /// In en, this message translates to:
@@ -2613,17 +2676,29 @@ abstract class I18N {
   /// **'Server Error'**
   String get serverError;
 
-  /// No description provided for @serverDetails.
+  /// No description provided for @serverInstance.
   ///
   /// In en, this message translates to:
-  /// **'Server Details'**
-  String get serverDetails;
+  /// **'Server Instance'**
+  String get serverInstance;
 
   /// No description provided for @serverMissingData.
   ///
   /// In en, this message translates to:
   /// **'Server response missing required fields'**
   String get serverMissingData;
+
+  /// No description provided for @serverNotConnected.
+  ///
+  /// In en, this message translates to:
+  /// **'Server not connected'**
+  String get serverNotConnected;
+
+  /// No description provided for @serverNotSelected.
+  ///
+  /// In en, this message translates to:
+  /// **'Server not selected'**
+  String get serverNotSelected;
 
   /// No description provided for @serverOld.
   ///
@@ -2649,23 +2724,11 @@ abstract class I18N {
   /// **'Settings'**
   String get settings;
 
-  /// No description provided for @serverInstance.
+  /// No description provided for @shipmentAdd.
   ///
   /// In en, this message translates to:
-  /// **'Server Instance'**
-  String get serverInstance;
-
-  /// No description provided for @serverNotConnected.
-  ///
-  /// In en, this message translates to:
-  /// **'Server not connected'**
-  String get serverNotConnected;
-
-  /// No description provided for @serverNotSelected.
-  ///
-  /// In en, this message translates to:
-  /// **'Server not selected'**
-  String get serverNotSelected;
+  /// **'Add Shipment'**
+  String get shipmentAdd;
 
   /// No description provided for @shipments.
   ///
@@ -2673,29 +2736,23 @@ abstract class I18N {
   /// **'Shipments'**
   String get shipments;
 
-  /// No description provided for @shipmentAdd.
-  ///
-  /// In en, this message translates to:
-  /// **'Add Shipment'**
-  String get shipmentAdd;
-
   /// No description provided for @shipped.
   ///
   /// In en, this message translates to:
   /// **'Shipped'**
   String get shipped;
 
+  /// No description provided for @shippedAgainstSalesOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipped against sales order'**
+  String get shippedAgainstSalesOrder;
+
   /// No description provided for @sku.
   ///
   /// In en, this message translates to:
   /// **'SKU'**
   String get sku;
-
-  /// No description provided for @sounds.
-  ///
-  /// In en, this message translates to:
-  /// **'Sounds'**
-  String get sounds;
 
   /// No description provided for @soundOnBarcodeAction.
   ///
@@ -2708,6 +2765,24 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Play audible tone on server error'**
   String get soundOnServerError;
+
+  /// No description provided for @sounds.
+  ///
+  /// In en, this message translates to:
+  /// **'Sounds'**
+  String get sounds;
+
+  /// No description provided for @splitChildItem.
+  ///
+  /// In en, this message translates to:
+  /// **'Split child item'**
+  String get splitChildItem;
+
+  /// No description provided for @splitFromParent.
+  ///
+  /// In en, this message translates to:
+  /// **'Split from parent'**
+  String get splitFromParent;
 
   /// No description provided for @status.
   ///
@@ -2727,6 +2802,18 @@ abstract class I18N {
   /// **'Stock'**
   String get stock;
 
+  /// No description provided for @stockAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock add'**
+  String get stockAdd;
+
+  /// No description provided for @stockCount.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock count'**
+  String get stockCount;
+
   /// No description provided for @stockDetails.
   ///
   /// In en, this message translates to:
@@ -2738,12 +2825,6 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Stock Item'**
   String get stockItem;
-
-  /// No description provided for @stockItems.
-  ///
-  /// In en, this message translates to:
-  /// **'Stock Items'**
-  String get stockItems;
 
   /// No description provided for @stockItemCreate.
   ///
@@ -2793,29 +2874,23 @@ abstract class I18N {
   /// **'Display historical stock tracking information'**
   String get stockItemHistoryDetail;
 
+  /// No description provided for @stockItemNotes.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock Item Notes'**
+  String get stockItemNotes;
+
   /// No description provided for @stockItemTransferred.
   ///
   /// In en, this message translates to:
   /// **'Stock item transferred'**
   String get stockItemTransferred;
 
-  /// No description provided for @stockItemUpdated.
+  /// No description provided for @stockItemUpdateFailure.
   ///
   /// In en, this message translates to:
-  /// **'Stock item updated'**
-  String get stockItemUpdated;
-
-  /// No description provided for @stockItemsNotAvailable.
-  ///
-  /// In en, this message translates to:
-  /// **'No stock items available'**
-  String get stockItemsNotAvailable;
-
-  /// No description provided for @stockItemNotes.
-  ///
-  /// In en, this message translates to:
-  /// **'Stock Item Notes'**
-  String get stockItemNotes;
+  /// **'Stock item update failed'**
+  String get stockItemUpdateFailure;
 
   /// No description provided for @stockItemUpdateSuccess.
   ///
@@ -2823,11 +2898,23 @@ abstract class I18N {
   /// **'Stock item updated'**
   String get stockItemUpdateSuccess;
 
-  /// No description provided for @stockItemUpdateFailure.
+  /// No description provided for @stockItemUpdated.
   ///
   /// In en, this message translates to:
-  /// **'Stock item update failed'**
-  String get stockItemUpdateFailure;
+  /// **'Stock item updated'**
+  String get stockItemUpdated;
+
+  /// No description provided for @stockItems.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock Items'**
+  String get stockItems;
+
+  /// No description provided for @stockItemsNotAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'No stock items available'**
+  String get stockItemsNotAvailable;
 
   /// stock location
   ///
@@ -2841,11 +2928,29 @@ abstract class I18N {
   /// **'Stock Locations'**
   String get stockLocations;
 
+  /// No description provided for @stockMove.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock move'**
+  String get stockMove;
+
+  /// No description provided for @stockRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock remove'**
+  String get stockRemove;
+
   /// No description provided for @stockTopLevel.
   ///
   /// In en, this message translates to:
   /// **'Top level stock location'**
   String get stockTopLevel;
+
+  /// No description provided for @stockUpdate.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock update'**
+  String get stockUpdate;
 
   /// No description provided for @strictHttps.
   ///
@@ -2859,29 +2964,23 @@ abstract class I18N {
   /// **'Enforce strict checking of HTTPs certificates'**
   String get strictHttpsDetails;
 
-  /// No description provided for @subcategory.
-  ///
-  /// In en, this message translates to:
-  /// **'Subcategory'**
-  String get subcategory;
-
   /// No description provided for @subcategories.
   ///
   /// In en, this message translates to:
   /// **'Subcategories'**
   String get subcategories;
 
+  /// No description provided for @subcategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Subcategory'**
+  String get subcategory;
+
   /// No description provided for @sublocation.
   ///
   /// In en, this message translates to:
   /// **'Sublocation'**
   String get sublocation;
-
-  /// No description provided for @sublocations.
-  ///
-  /// In en, this message translates to:
-  /// **'Sublocations'**
-  String get sublocations;
 
   /// No description provided for @sublocationNone.
   ///
@@ -2894,6 +2993,12 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'No sublocations available'**
   String get sublocationNoneDetail;
+
+  /// No description provided for @sublocations.
+  ///
+  /// In en, this message translates to:
+  /// **'Sublocations'**
+  String get sublocations;
 
   /// No description provided for @submitFeedback.
   ///
@@ -2943,17 +3048,17 @@ abstract class I18N {
   /// **'Supplier Parts'**
   String get supplierParts;
 
-  /// No description provided for @suppliers.
-  ///
-  /// In en, this message translates to:
-  /// **'Suppliers'**
-  String get suppliers;
-
   /// No description provided for @supplierReference.
   ///
   /// In en, this message translates to:
   /// **'Supplier Reference'**
   String get supplierReference;
+
+  /// No description provided for @suppliers.
+  ///
+  /// In en, this message translates to:
+  /// **'Suppliers'**
+  String get suppliers;
 
   /// No description provided for @takePicture.
   ///
@@ -2985,24 +3090,6 @@ abstract class I18N {
   /// **'Test passed or failed'**
   String get testPassedOrFailed;
 
-  /// No description provided for @testsRequired.
-  ///
-  /// In en, this message translates to:
-  /// **'Required Tests'**
-  String get testsRequired;
-
-  ///
-  ///
-  /// In en, this message translates to:
-  /// **'Test Results'**
-  String get testResults;
-
-  /// No description provided for @testResultsDetail.
-  ///
-  /// In en, this message translates to:
-  /// **'Display stock item test results'**
-  String get testResultsDetail;
-
   /// No description provided for @testResultAdd.
   ///
   /// In en, this message translates to:
@@ -3032,6 +3119,24 @@ abstract class I18N {
   /// In en, this message translates to:
   /// **'Test result uploaded'**
   String get testResultUploadPass;
+
+  ///
+  ///
+  /// In en, this message translates to:
+  /// **'Test Results'**
+  String get testResults;
+
+  /// No description provided for @testResultsDetail.
+  ///
+  /// In en, this message translates to:
+  /// **'Display stock item test results'**
+  String get testResultsDetail;
+
+  /// No description provided for @testsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Required Tests'**
+  String get testsRequired;
 
   ///
   ///
@@ -3229,7 +3334,7 @@ class _I18NDelegate extends LocalizationsDelegate<I18N> {
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['ar', 'bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fa', 'fi', 'fr', 'he', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'lv', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sr', 'sv', 'th', 'tr', 'uk', 'vi', 'zh'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>['en', 'ru'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_I18NDelegate old) => false;
@@ -3239,216 +3344,9 @@ I18N lookupI18N(Locale locale) {
 
   // Lookup logic when language+country codes are specified.
   switch (locale.languageCode) {
-    case 'ar': {
-  switch (locale.countryCode) {
-    case 'SA': return I18NArSa();
-   }
-  break;
-   }
-    case 'bg': {
-  switch (locale.countryCode) {
-    case 'BG': return I18NBgBg();
-   }
-  break;
-   }
-    case 'cs': {
-  switch (locale.countryCode) {
-    case 'CZ': return I18NCsCz();
-   }
-  break;
-   }
-    case 'da': {
-  switch (locale.countryCode) {
-    case 'DK': return I18NDaDk();
-   }
-  break;
-   }
-    case 'de': {
-  switch (locale.countryCode) {
-    case 'DE': return I18NDeDe();
-   }
-  break;
-   }
-    case 'el': {
-  switch (locale.countryCode) {
-    case 'GR': return I18NElGr();
-   }
-  break;
-   }
-    case 'es': {
-  switch (locale.countryCode) {
-    case 'ES': return I18NEsEs();
-case 'MX': return I18NEsMx();
-   }
-  break;
-   }
-    case 'et': {
-  switch (locale.countryCode) {
-    case 'EE': return I18NEtEe();
-   }
-  break;
-   }
-    case 'fa': {
-  switch (locale.countryCode) {
-    case 'IR': return I18NFaIr();
-   }
-  break;
-   }
-    case 'fi': {
-  switch (locale.countryCode) {
-    case 'FI': return I18NFiFi();
-   }
-  break;
-   }
-    case 'fr': {
-  switch (locale.countryCode) {
-    case 'FR': return I18NFrFr();
-   }
-  break;
-   }
-    case 'he': {
-  switch (locale.countryCode) {
-    case 'IL': return I18NHeIl();
-   }
-  break;
-   }
-    case 'hi': {
-  switch (locale.countryCode) {
-    case 'IN': return I18NHiIn();
-   }
-  break;
-   }
-    case 'hu': {
-  switch (locale.countryCode) {
-    case 'HU': return I18NHuHu();
-   }
-  break;
-   }
-    case 'id': {
-  switch (locale.countryCode) {
-    case 'ID': return I18NIdId();
-   }
-  break;
-   }
-    case 'it': {
-  switch (locale.countryCode) {
-    case 'IT': return I18NItIt();
-   }
-  break;
-   }
-    case 'ja': {
-  switch (locale.countryCode) {
-    case 'JP': return I18NJaJp();
-   }
-  break;
-   }
-    case 'ko': {
-  switch (locale.countryCode) {
-    case 'KR': return I18NKoKr();
-   }
-  break;
-   }
-    case 'lt': {
-  switch (locale.countryCode) {
-    case 'LT': return I18NLtLt();
-   }
-  break;
-   }
-    case 'lv': {
-  switch (locale.countryCode) {
-    case 'LV': return I18NLvLv();
-   }
-  break;
-   }
-    case 'nl': {
-  switch (locale.countryCode) {
-    case 'NL': return I18NNlNl();
-   }
-  break;
-   }
-    case 'no': {
-  switch (locale.countryCode) {
-    case 'NO': return I18NNoNo();
-   }
-  break;
-   }
-    case 'pl': {
-  switch (locale.countryCode) {
-    case 'PL': return I18NPlPl();
-   }
-  break;
-   }
-    case 'pt': {
-  switch (locale.countryCode) {
-    case 'BR': return I18NPtBr();
-case 'PT': return I18NPtPt();
-   }
-  break;
-   }
-    case 'ro': {
-  switch (locale.countryCode) {
-    case 'RO': return I18NRoRo();
-   }
-  break;
-   }
     case 'ru': {
   switch (locale.countryCode) {
     case 'RU': return I18NRuRu();
-   }
-  break;
-   }
-    case 'sk': {
-  switch (locale.countryCode) {
-    case 'SK': return I18NSkSk();
-   }
-  break;
-   }
-    case 'sl': {
-  switch (locale.countryCode) {
-    case 'SI': return I18NSlSi();
-   }
-  break;
-   }
-    case 'sr': {
-  switch (locale.countryCode) {
-    case 'CS': return I18NSrCs();
-   }
-  break;
-   }
-    case 'sv': {
-  switch (locale.countryCode) {
-    case 'SE': return I18NSvSe();
-   }
-  break;
-   }
-    case 'th': {
-  switch (locale.countryCode) {
-    case 'TH': return I18NThTh();
-   }
-  break;
-   }
-    case 'tr': {
-  switch (locale.countryCode) {
-    case 'TR': return I18NTrTr();
-   }
-  break;
-   }
-    case 'uk': {
-  switch (locale.countryCode) {
-    case 'UA': return I18NUkUa();
-   }
-  break;
-   }
-    case 'vi': {
-  switch (locale.countryCode) {
-    case 'VN': return I18NViVn();
-   }
-  break;
-   }
-    case 'zh': {
-  switch (locale.countryCode) {
-    case 'CN': return I18NZhCn();
-case 'TW': return I18NZhTw();
    }
   break;
    }
@@ -3456,42 +3354,8 @@ case 'TW': return I18NZhTw();
 
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'ar': return I18NAr();
-    case 'bg': return I18NBg();
-    case 'cs': return I18NCs();
-    case 'da': return I18NDa();
-    case 'de': return I18NDe();
-    case 'el': return I18NEl();
     case 'en': return I18NEn();
-    case 'es': return I18NEs();
-    case 'et': return I18NEt();
-    case 'fa': return I18NFa();
-    case 'fi': return I18NFi();
-    case 'fr': return I18NFr();
-    case 'he': return I18NHe();
-    case 'hi': return I18NHi();
-    case 'hu': return I18NHu();
-    case 'id': return I18NId();
-    case 'it': return I18NIt();
-    case 'ja': return I18NJa();
-    case 'ko': return I18NKo();
-    case 'lt': return I18NLt();
-    case 'lv': return I18NLv();
-    case 'nl': return I18NNl();
-    case 'no': return I18NNo();
-    case 'pl': return I18NPl();
-    case 'pt': return I18NPt();
-    case 'ro': return I18NRo();
     case 'ru': return I18NRu();
-    case 'sk': return I18NSk();
-    case 'sl': return I18NSl();
-    case 'sr': return I18NSr();
-    case 'sv': return I18NSv();
-    case 'th': return I18NTh();
-    case 'tr': return I18NTr();
-    case 'uk': return I18NUk();
-    case 'vi': return I18NVi();
-    case 'zh': return I18NZh();
   }
 
   throw FlutterError(

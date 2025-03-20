@@ -1,16 +1,6 @@
 {
   "@@locale": "en",
 
-  "appTitle": "InvenTree",
-  "@appTitle": {
-    "description": "InvenTree application title string"
-  },
-
-  "ok": "OK",
-  "@ok": {
-    "description": "OK"
-  },
-
   "about": "About",
   "@about": {},
 
@@ -38,6 +28,12 @@
   "address": "Address",
   "@address": {},
 
+  "allocateStock": "Allocate Stock",
+  "@allocateStock": {},
+
+  "allocated": "Allocated",
+  "@allocated": {},
+
   "appAbout": "About InvenTree",
   "@appAbout": {},
 
@@ -46,12 +42,6 @@
 
   "appDetails": "App Details",
   "@appDetails": {},
-
-  "allocated": "Allocated",
-  "@allocated": {},
-
-  "allocateStock": "Allocate Stock",
-  "@allocateStock": {},
 
   "appReleaseNotes": "Display app release notes",
   "@appReleaseNotes": {},
@@ -62,14 +52,19 @@
   "appSettingsDetails": "Configure InvenTree app settings",
   "@appSettingsDetails": {},
 
+  "appTitle": "InvenTree",
+  "@appTitle": {
+    "description": "InvenTree application title string"
+  },
+
+  "assignedSerial": "Assigned serial",
+  "@assignedSerial": {},
+
   "assignedToMe": "Assigned to Me",
   "@assignedToMe": {},
 
   "assignedToMeDetail": "Show orders which are assigned to me",
   "@assignedToMeDetail": {},
-
-  "attachments": "Attachments",
-  "@attachments": {},
 
   "attachImage": "Attach Image",
   "@attachImage": {
@@ -85,20 +80,20 @@
   "attachmentSelect": "Select attachment",
   "@attachmentSelect": {},
 
+  "attachments": "Attachments",
+  "@attachments": {},
+
   "attention": "Attention",
   "@attention": {},
 
-   "available": "Available",
-   "@available": {},
+  "attentionNeeded": "Attention needed",
+  "@attentionNeeded": {},
+
+  "available": "Available",
+  "@available": {},
 
   "availableStock": "Available Stock",
   "@availableStock": {},
-
-  "barcodes": "Barcodes",
-  "@barcodes": {},
-
-  "barcodeSettings": "Barcode Settings",
-  "@barcodeSettings": {},
 
   "barcodeAssign": "Assign Barcode",
   "@barcodeAssign": {},
@@ -124,17 +119,8 @@
   "barcodeNotAssigned": "Barcode not assigned",
   "@barcodeNotAssigned": {},
 
-  "barcodeScanPart": "Scan part barcode",
-  "@barcodeScanPart": {},
-
   "barcodeReceivePart": "Scan barcode to receive part",
   "@barcodeReceivePart": {},
-
-  "barcodeScanPaused": "Barcode scanning paused",
-  "@barodeScanPaused": {},
-
-  "barcodeScanPause": "Tap or hold to pause scanning",
-  "@barcodeScanPause": {},
 
   "barcodeScanAssign": "Scan to assign barcode",
   "@barcodeScanAssign": {},
@@ -157,8 +143,25 @@
   "barcodeScanInItems": "Scan stock items into this location",
   "@barcodeScanInItems": {},
 
+  "barcodeScanIntoLocationFailure": "Item not scanned in",
+  "@barcodeScanIntoLocationFailure": {},
+
+  "barcodeScanIntoLocationSuccess": "Scanned into location",
+  "@barcodeScanIntoLocationSuccess": {},
+
+  "barcodeScanItem": "Scan stock item",
+  "@barcodeScanItem": {},
+
   "barcodeScanLocation": "Scan stock location",
   "@barcodeScanLocation": {},
+
+  "barcodeScanPart": "Scan part barcode",
+  "@barcodeScanPart": {},
+
+  "barcodeScanPause": "Tap or hold to pause scanning",
+  "@barcodeScanPause": {},
+
+  "barcodeScanPaused": "Barcode scanning paused",
 
   "barcodeScanSingle": "Single Scan Mode",
   "@barcodeScanSingle": {},
@@ -166,14 +169,8 @@
   "barcodeScanSingleDetail": "Pause barcode scanner after each scan",
   "@barcodeScanSingleDetail": {},
 
-  "barcodeScanIntoLocationSuccess": "Scanned into location",
-  "@barcodeScanIntoLocationSuccess": {},
-
-  "barcodeScanIntoLocationFailure": "Item not scanned in",
-  "@barcodeScanIntoLocationFailure": {},
-
-  "barcodeScanItem": "Scan stock item",
-  "@barcodeScanItem": {},
+  "barcodeSettings": "Barcode Settings",
+  "@barcodeSettings": {},
 
   "barcodeTones": "Barcode Tones",
   "@barcodeTones": {},
@@ -183,6 +180,11 @@
 
   "barcodeUnknown": "Barcode is not recognized",
   "@barcodeUnknown": {},
+
+  "barcodes": "Barcodes",
+  "@barcodes": {},
+
+  "@barodeScanPaused": {},
 
   "batchCode": "Batch Code",
   "@batchCode": {},
@@ -198,6 +200,18 @@
 
   "build": "Build",
   "@build": {},
+
+  "buildConsumed": "Build consumed",
+  "@buildConsumed": {},
+
+  "buildOutputCompleted": "Build output completed",
+  "@buildOutputCompleted": {},
+
+  "buildOutputCreated": "Build output created",
+  "@buildOutputCreated": {},
+
+  "buildOutputRejected": "Build output rejected",
+  "@buildOutputRejected": {},
 
   "building": "Building",
   "@building": {},
@@ -219,6 +233,9 @@
   "cancelOrder": "Cancel Order",
   "@cancelOrder": {},
 
+  "cancelled": "Cancelled",
+  "@cancelled": {},
+
   "category": "Category",
   "@category": {},
 
@@ -230,6 +247,15 @@
 
   "categoryUpdated": "Part category updated",
   "@categoryUpdated": {},
+
+  "colorScheme": "Color Scheme",
+  "@colorScheme": {},
+
+  "colorSchemeDetail": "Select color scheme",
+  "@colorSchemeDetail": {},
+
+  "companies": "Companies",
+  "@companies": {},
 
   "company": "Company",
   "@company": {},
@@ -246,8 +272,8 @@
   "companyUpdated": "Company details updated",
   "@companyUpdated": {},
 
-  "companies": "Companies",
-  "@companies": {},
+  "complete": "Complete",
+  "@complete": {},
 
   "completionDate": "Completion Date",
   "@completionDate": {},
@@ -257,12 +283,15 @@
 
   "confirmScan": "Confirm Transfer",
   "@confirmScan": {},
+  "@confirmScan": {},
 
   "confirmScanDetail": "Confirm stock transfer details when scanning barcodes",
-  "@confirmScan": {},
 
   "connectionRefused": "Connection Refused",
   "@connectionRefused": {},
+
+  "convertedToVariant": "Converted to variant",
+  "@convertedToVariant": {},
 
   "count": "Count",
   "@count": {
@@ -274,26 +303,26 @@
     "description": "Count Stock"
   },
 
+  "countStocksInLocation": "Counted stocks in location",
+  "@countStocksInLocation": {},
+
+  "created": "Created",
+  "@created": {},
+
   "credits": "Credits",
   "@credits": {},
 
   "customer": "Customer",
   "@customer": {},
 
-  "customers": "Customers",
-  "@customers": {},
-
   "customerReference": "Customer Reference",
   "@customerReference": {},
 
+  "customers": "Customers",
+  "@customers": {},
+
   "damaged": "Damaged",
   "@damaged": {},
-
-  "colorScheme": "Color Scheme",
-  "@colorScheme": {},
-
-  "colorSchemeDetail": "Select color scheme",
-  "@colorSchemeDetail": {},
 
   "darkMode": "Dark Mode",
   "@darkMode": {},
@@ -315,8 +344,8 @@
 
   "deleteSuccess": "Delete operation successful",
   "@deleteSuccess": {},
-
   "description": "Description",
+
   "@description": {},
 
   "destination": "Destination",
@@ -333,11 +362,11 @@
   "documentation": "Documentation",
   "@documentation": {},
 
-  "downloading": "Downloading File",
-  "@downloading": {},
-
   "downloadError": "Download Error",
   "@downloadError": {},
+
+  "downloading": "Downloading File",
+  "@downloading": {},
 
   "edit": "Edit",
   "@edit": {
@@ -349,6 +378,12 @@
 
   "editCategory": "Edit Category",
   "@editCategory": {},
+
+  "editItem": "Edit Stock Item",
+  "@editItem": {},
+
+  "editLineItem": "Edit Line Item",
+  "@editLineItem": {},
 
   "editLocation": "Edit Location",
   "@editLocation": {},
@@ -364,11 +399,8 @@
     "description": "edit part"
   },
 
-  "editItem": "Edit Stock Item",
-  "@editItem": {},
-
-  "editLineItem": "Edit Line Item",
-  "@editLineItem": {},
+  "edited": "Edited",
+  "@edited": {},
 
   "enterPassword": "Enter password",
   "@enterPassword": {},
@@ -393,20 +425,20 @@
   "errorFetch":  "Error fetching data from server",
   "@errorFetch": {},
 
-  "errorUserRoles": "Error requesting user roles from server",
-  "@errorUserRoles": {},
-
   "errorPluginInfo": "Error requesting plugin data from server",
   "@errorPluginInfo": {},
-
-  "errorReporting": "Error Reporting",
-  "@errorReporting": {},
 
   "errorReportUpload": "Upload Error Reports",
   "@errorReportUpload": {},
 
   "errorReportUploadDetails": "Upload anonymous error reports and crash logs",
   "@errorReportUploadDetails": {},
+
+  "errorReporting": "Error Reporting",
+  "@errorReporting": {},
+
+  "errorUserRoles": "Error requesting user roles from server",
+  "@errorUserRoles": {},
 
   "expiryDate": "Expiry Date",
   "@expiryDate": {},
@@ -483,14 +515,14 @@
   "filteringOptions": "Filtering Options",
   "@filteringOptions": {},
 
+  "formError": "Form Error",
+  "@formError": {},
+
   "formatException": "Format Exception",
   "@formatException": {},
 
   "formatExceptionJson": "JSON data format exception",
   "@formatExceptionJson": {},
-
-  "formError": "Form Error",
-  "@formError": {},
 
   "history": "History",
   "@history": {
@@ -498,13 +530,25 @@
   },
 
   "home": "Home",
-  "@homeScreen": {},
 
+  "@homeScreen": {},
   "homeScreen": "Home Screen",
   "@homeScreen": {},
 
   "homeScreenSettings": "Configure home screen settings",
   "@homeScreenSettings": {},
+
+  "homeShowCustomers": "Show Customers",
+  "@homeShowCustomers": {},
+
+  "homeShowCustomersDescription": "Show customers button on home screen",
+  "@homeShowCustomersDescription": {},
+
+  "homeShowManufacturers": "Show Manufacturers",
+  "@homeShowManufacturers": {},
+
+  "homeShowManufacturersDescription": "Show manufacturers button on home screen",
+  "@homeShowManufacturersDescription": {},
 
   "homeShowPo":  "Show Purchase Orders",
   "@homeShowPo": {},
@@ -522,31 +566,30 @@
   "@homeShowSubscribed": {},
 
   "homeShowSubscribedDescription": "Show subscribed parts on home screen",
+
   "@homeShowSubscsribedDescription": {},
+
+  "@homeShowSupplierDescription": {},
 
   "homeShowSuppliers": "Show Suppliers",
   "@homeShowSuppliers": {},
 
   "homeShowSuppliersDescription": "Show suppliers button on home screen",
-  "@homeShowSupplierDescription": {},
-
-  "homeShowManufacturers": "Show Manufacturers",
-  "@homeShowManufacturers": {},
-
-  "homeShowManufacturersDescription": "Show manufacturers button on home screen",
-  "@homeShowManufacturersDescription": {},
-
-  "homeShowCustomers": "Show Customers",
-  "@homeShowCustomers": {},
-
-  "homeShowCustomersDescription": "Show customers button on home screen",
-  "@homeShowCustomersDescription": {},
 
   "imageUploadFailure": "Image upload failed",
   "@imageUploadFailure": {},
 
   "imageUploadSuccess": "Image uploaded",
   "@imageUploadSuccess": {},
+
+  "inProduction": "In Production",
+  "@inProduction": {},
+
+  "inProductionDetail": "This stock item is in production",
+  "@inProductionDetail": {},
+
+  "inProgress": "In progress",
+  "@inProgress": {},
 
   "inactive": "Inactive",
   "@inactive": {},
@@ -572,20 +615,20 @@
   "incompleteDetails": "Incomplete profile details",
   "@incompleteDetails": {},
 
-  "internalPartNumber": "Internal Part Number",
-  "@internalPartNumber": {},
-
   "info": "Info",
   "@info": {},
 
-  "inProduction": "In Production",
-  "@inProduction": {},
+  "installedChildItem": "Installed child item",
+  "@installedChildItem": {},
 
-  "inProductionDetail": "This stock item is in production",
-  "@inProductionDetail": {},
+  "installedIntoAssembly": "Installed into assembly",
+  "@installedIntoAssembly": {},
 
   "internalPart": "Internal Part",
   "@internalPart": {},
+
+  "internalPartNumber": "Internal Part Number",
+  "@internalPartNumber": {},
 
   "invalidHost": "Invalid hostname",
   "@invalidHost": {},
@@ -599,11 +642,11 @@
   "invalidPartCategory": "Invalid Part Category",
   "@invalidPartCategory": {},
 
-  "invalidStockLocation": "Invalid Stock Location",
-  "@invalidStockLocation": {},
-
   "invalidStockItem": "Invalid Stock Item",
   "@invalidStockItem": {},
+
+  "invalidStockLocation": "Invalid Stock Location",
+  "@invalidStockLocation": {},
 
   "invalidSupplierPart": "Invalid Supplier Part",
   "@invalidSupplierPart": {},
@@ -620,11 +663,11 @@
   "issueOrder": "Issue Order",
   "@issueOrder": {},
 
-  "itemInLocation": "Item already in location",
-  "@itemInLocation": {},
-
   "itemDeleted": "Item has been removed",
   "@itemDeleted": {},
+
+  "itemInLocation": "Item already in location",
+  "@itemInLocation": {},
 
   "itemUpdated": "Item updated",
   "@itemUpdated": {},
@@ -638,14 +681,14 @@
   "labelPrintingDetail": "Enable label printing",
   "@labelPrintingDetail": {},
 
-  "labelTemplate": "Label Template",
-  "@labelTemplate": {},
+  "labelSelectPrinter": "Select Label Printer",
+  "@labelSelectPrinter": {},
 
   "labelSelectTemplate": "Select Label Template",
   "@labelSelectTemplate": {},
 
-  "labelSelectPrinter": "Select Label Printer",
-  "@labelSelectPrinter": {},
+  "labelTemplate": "Label Template",
+  "@labelTemplate": {},
 
   "language": "Language",
   "@language": {},
@@ -656,27 +699,32 @@
   "languageSelect": "Select Language",
   "@languageSelect": {},
 
-
   "lastStocktake": "Last Stocktake",
   "@lastStocktake": {},
 
   "lastUpdated": "Last Updated",
   "@lastUpdated": {},
 
+  "legacy": "Legacy",
+  "@legacy": {},
+
   "level": "Level",
   "@level": {},
-
-  "lineItemAdd": "Add Line Item",
-  "@lineItemAdd": {},
 
   "lineItem": "Line Item",
   "@lineItem": {},
 
-  "lineItems": "Line Items",
-  "@lineItems": {},
+  "lineItemAdd": "Add Line Item",
+  "@lineItemAdd": {},
 
   "lineItemUpdated": "Line item updated",
   "@lineItemUpdated": {},
+
+  "lineItems": "Line Items",
+  "@lineItems": {},
+
+  "link": "Link",
+  "@link": {},
 
   "locateItem": "Locate stock item",
   "@locateItem": {},
@@ -705,11 +753,11 @@
   "loginEnterDetails": "Username and password are not stored locally",
   "@loginEnterDetails": {},
 
-  "link": "Link",
-  "@link": {},
-
   "lost": "Lost",
   "@lost": {},
+
+  "manufacturer": "Manufacturer",
+  "@manufacturer": {},
 
   "manufacturerPart": "Manufacturer Part",
   "@manufacturerPart": {},
@@ -720,11 +768,11 @@
   "manufacturerPartNumber": "Manufacturer Part Number",
   "@manufacturerPartNumber": {},
 
-  "manufacturer": "Manufacturer",
-  "@manufacturer": {},
-
   "manufacturers": "Manufacturers",
   "@manufacturers": {},
+
+  "mergedStockItems": "Merged stock items",
+  "@mergedStockItems": {},
 
   "missingData": "Missing Data",
   "@missingData": {},
@@ -732,6 +780,18 @@
   "name": "Name",
   "@name": {
   },
+
+  "noResponse": "No Response from Server",
+  "@noResponse": {},
+
+  "noResults": "No Results",
+  "@noResults": {},
+
+  "noSubcategories": "No Subcategories",
+  "@noSubcategories": {},
+
+  "noSubcategoriesAvailable": "No subcategories available",
+  "@noSubcategoriesAvailable": {},
 
   "notConnected": "Not Connected",
   "@notConnected": {},
@@ -747,20 +807,16 @@
    "notificationsEmpty": "No unread notifications",
    "@notificationsEmpty": {},
 
-  "noResponse": "No Response from Server",
-  "@noResponse": {},
-
-  "noResults": "No Results",
-  "@noResults": {},
-
-  "noSubcategories": "No Subcategories",
-  "@noSubcategories": {},
-
-  "noSubcategoriesAvailable": "No subcategories available",
-  "@noSubcategoriesAvailable": {},
-
   "numberInvalid": "Invalid number",
   "@numberInvalid": {},
+
+  "ok": "OK",
+  "@ok": {
+    "description": "OK"
+  },
+
+  "onHold": "On hold",
+  "@onHold": {},
 
   "onOrder": "On Order",
   "@onOrder": {},
@@ -776,7 +832,7 @@
 
   "orientationLandscape": "Landscape",
   "@orientationLandscape": {},
-  
+
   "orientationPortrait": "Portrait",
   "@orientationPortrait": {},
 
@@ -795,11 +851,11 @@
   "overdueDetail": "Show overdue orders",
   "@overdueDetail": {},
 
-  "packaging": "Packaging",
-  "@packaging": {},
-
   "packageName": "Package Name",
   "@packageName": {},
+
+  "packaging": "Packaging",
+  "@packaging": {},
 
   "parameters": "Parameters",
   "@parameters": {},
@@ -821,40 +877,8 @@
     "description": "Part (single)"
   },
 
-  "partCreate": "New Part",
-  "@partCreate": {},
-
-  "partCreateDetail": "Create new part in this category",
-  "@partCreateDetail": {},
-
-  "partEdited": "Part updated",
-  "@partEdited": {},
-
-  "parts": "Parts",
-  "@parts": {
-    "description": "Part (multiple)"
-  },
-
-  "partNotSalable": "Part not marked as salable",
-  "@partNotSalable": {},
-
-  "partsNone": "No Parts",
-  "@partsNone": {},
-
-  "partNoResults": "No parts matching query",
-  "@partNoResults": {},
-
-  "partSettings": "Part Settings",
-  "@partSettings": {},
-
-  "partsStarred": "Subscribed Parts",
-  "@partsStarred": {},
-
-  "partsStarredNone": "No starred parts available",
-  "@partsStarredNone": {},
-
-  "partSuppliers": "Part Suppliers",
-  "@partSuppliers": {},
+  "partCategories": "Part Categories",
+  "@partCategories": {},
 
   "partCategory": "Part Category",
   "@partCategory": {},
@@ -862,19 +886,51 @@
   "partCategoryTopLevel": "Top level part category",
   "@partCategoryTopLevel": {},
 
-  "partCategories": "Part Categories",
-  "@partCategories": {},
+  "partCreate": "New Part",
+  "@partCreate": {},
+
+  "partCreateDetail": "Create new part in this category",
+  "@partCreateDetail": {},
 
   "partDetails": "Part Details",
   "@partDetails": {},
 
+  "partEdited": "Part updated",
+  "@partEdited": {},
+
+  "partNoResults": "No parts matching query",
+  "@partNoResults": {},
+
+  "partNotSalable": "Part not marked as salable",
+  "@partNotSalable": {},
+
   "partNotes": "Part Notes",
   "@partNotes": {},
+
+  "partSettings": "Part Settings",
+  "@partSettings": {},
 
   "partStock": "Part Stock",
   "@partStock": {
     "description": "part stock"
   },
+
+  "partSuppliers": "Part Suppliers",
+  "@partSuppliers": {},
+
+  "parts": "Parts",
+  "@parts": {
+    "description": "Part (multiple)"
+  },
+
+  "partsNone": "No Parts",
+  "@partsNone": {},
+
+  "partsStarred": "Subscribed Parts",
+  "@partsStarred": {},
+
+  "partsStarredNone": "No starred parts available",
+  "@partsStarredNone": {},
 
   "password": "Password",
   "@password": {},
@@ -882,14 +938,17 @@
   "passwordEmpty": "Password cannot be empty",
   "@passwordEmpty": {},
 
+  "pending": "Pending",
+  "@pending": {},
+
   "permissionAccountDenied": "Your account does not have the required permissions to perform this action",
   "@permissionAccountDenied": {},
 
   "permissionRequired": "Permission Required",
   "@permissionRequired": {},
 
-  "printLabel": "Print Label",
-  "@printLabel": {},
+  "placed": "Placed",
+  "@placed": {},
 
   "plugin": "Plugin",
   "@plugin": {},
@@ -902,6 +961,9 @@
 
   "pluginSupportDetail": "The server supports custom plugins",
   "@pluginSupportDetail": {},
+
+  "printLabel": "Print Label",
+  "@printLabel": {},
 
   "printLabelFailure": "Label printing failed",
   "@printLabelFailure": {},
@@ -918,11 +980,11 @@
   "profileConnect": "Connect to Server",
   "@profileConnect": {},
 
-  "profileEdit": "Edit Server Profile",
-  "@profileEdit": {},
-
   "profileDelete": "Delete Server Profile",
   "@profileDelete": {},
+
+  "profileEdit": "Edit Server Profile",
+  "@profileEdit": {},
 
   "profileLogout": "Logout Profile",
   "@profileLogout": {},
@@ -948,26 +1010,14 @@
   "projectCode": "Project Code",
   "@projectCode": {},
 
+  "purchaseOrder": "Purchase Order",
+  "@purchaseOrder": {},
+
     "purchaseOrderConfirmScan": "Confirm Scan Data",
     "@purchaseOrderConfirmScan": {},
 
     "purchaseOrderConfirmScanDetail": "Confirm details when scanning in items",
     "@purchaseOrderConfirmScanDetail": {},
-
-   "purchaseOrderEnable": "Enable Purchase Orders",
-   "@purchaseOrderEnable": {},
-
-   "purchaseOrderEnableDetail": "Enable purchase order functionality",
-    "@purchaseOrderEnableDetail": {},
-
-    "purchaseOrderShowCamera": "Camera Shortcut",
-    "@purchaseOrderShowCamera": {},
-
-    "purchaseOrderShowCameraDetail": "Enable image upload shortcut on purchase order screen",
-    "@purchaseOrderShowCameraDetail": {},
-
-  "purchaseOrder": "Purchase Order",
-  "@purchaseOrder": {},
 
   "purchaseOrderCreate": "New Purchase Order",
   "@purchaseOrderCreate": {},
@@ -975,14 +1025,26 @@
   "purchaseOrderEdit": "Edit Purchase Order",
   "@purchaseOrderEdit": {},
 
+   "purchaseOrderEnable": "Enable Purchase Orders",
+   "@purchaseOrderEnable": {},
+
+   "purchaseOrderEnableDetail": "Enable purchase order functionality",
+    "@purchaseOrderEnableDetail": {},
+
    "purchaseOrderSettings": "Purchase order settings",
     "@purchaseOrderSettings": {},
 
-  "purchaseOrders": "Purchase Orders",
-  "@purchaseOrders": {},
+    "purchaseOrderShowCamera": "Camera Shortcut",
+    "@purchaseOrderShowCamera": {},
+
+    "purchaseOrderShowCameraDetail": "Enable image upload shortcut on purchase order screen",
+    "@purchaseOrderShowCameraDetail": {},
 
   "purchaseOrderUpdated": "Purchase order updated",
   "@purchaseOrderUpdated": {},
+
+  "purchaseOrders": "Purchase Orders",
+  "@purchaseOrders": {},
 
   "purchasePrice": "Purchase Price",
   "@purchasePrice": {},
@@ -1004,20 +1066,26 @@
   "quantityPositive": "Quantity must be positive",
   "@quantityPositive": {},
 
+  "quarantined": "Quarantined",
+  "@quarantined": {},
+
   "queryEmpty": "Enter search query",
   "@queryEmpty": {},
 
   "queryNoResults": "No results for query",
   "@queryNoResults": {},
 
+  "receiveItem": "Receive Item",
+  "@receiveItem": {},
+
   "received": "Received",
   "@received": {},
 
+  "receivedAgainstPurchaseOrder": "Received against purchase order",
+  "@receivedAgainstPurchaseOrder": {},
+
   "receivedFilterDetail": "Show received items",
   "@receivedFilterDetail": {},
-
-  "receiveItem": "Receive Item",
-  "@receiveItem": {},
 
   "receivedItem": "Received Stock Item",
   "@receivedItem": {},
@@ -1047,17 +1115,17 @@
     "description": "remove stock"
   },
 
+  "removedChildItem": "Removed child item",
+  "@removedChildItem": {},
+
+  "removedFromAssembly": "Removed from assembly",
+  "@removedFromAssembly": {},
+
   "reportBug": "Report Bug",
   "@reportBug": {},
 
   "reportBugDescription": "Submit bug report (requires GitHub account)",
   "@reportBugDescription": {},
-
-  "responsible": "Responsible",
-  "@responsible": {},
-
-  "results": "Results",
-  "@results": {},
 
   "request": "Request",
   "@request": {},
@@ -1121,19 +1189,35 @@
   "responseUnknown": "Unknown Response",
   "@responseUnknown": {},
 
+  "responsible": "Responsible",
+  "@responsible": {},
+
   "result": "Result",
   "@result": {
     "description": ""
   },
 
+  "results": "Results",
+  "@results": {},
+
   "returned": "Returned",
   "@returned": {},
+
+  "returnedAgainstReturnOrder": "Returned against return order",
+  "@returnedAgainstReturnOrder": {},
+
+  "returnedFromCustomer": "Returned from customer",
+  "@returnedFromCustomer": {},
+
+  "@saleOrderCreate": {},
 
   "salesOrder": "Sales Order",
   "@salesOrder": {},
 
-  "salesOrders": "Sales Orders",
-  "@salesOrders": {},
+  "salesOrderCreate": "New Sales Order",
+
+  "salesOrderEdit": "Edit Sales Order",
+  "@salesOrderEdit": {},
 
    "salesOrderEnable": "Enable Sales Orders",
    "@salesOrderEnable": {},
@@ -1141,23 +1225,20 @@
    "salesOrderEnableDetail": "Enable sales order functionality",
     "@salesOrderEnableDetail": {},
 
+  "salesOrderSettings": "Sales order settings",
+    "@salesOrderSettings": {},
+
     "salesOrderShowCamera": "Camera Shortcut",
     "@salesOrderShowCamera": {},
 
     "salesOrderShowCameraDetail": "Enable image upload shortcut on sales order screen",
     "@salesOrderShowCameraDetail": {},
 
-  "salesOrderSettings": "Sales order settings",
-    "@salesOrderSettings": {},
-
-  "salesOrderCreate": "New Sales Order",
-  "@saleOrderCreate": {},
-
-  "salesOrderEdit": "Edit Sales Order",
-  "@salesOrderEdit": {},
-
   "salesOrderUpdated": "Sales order updated",
   "@salesOrderUpdated": {},
+
+  "salesOrders": "Sales Orders",
+  "@salesOrders": {},
 
   "save": "Save",
   "@save": {
@@ -1168,14 +1249,17 @@
   "@scanBarcode": {
   },
 
-  "scanSupplierPart": "Scan supplier part barcode",
-  "@scanSupplierPart": {},
-
   "scanIntoLocation": "Scan Into Location",
   "@scanIntoLocation": {},
 
   "scanIntoLocationDetail": "Scan this item into location",
   "@scanIntoLocationDetail": {},
+
+  "scanReceivedParts": "Scan Received Parts",
+  "@scanReceivedParts": {},
+
+  "scanSupplierPart": "Scan supplier part barcode",
+  "@scanSupplierPart": {},
 
   "scannerExternal": "External Scanner",
   "@scannerExternal": {},
@@ -1183,16 +1267,10 @@
   "scannerExternalDetail": "Use external scanner to read barcodes (wedge mode)",
   "@scannerExternalDetail": {},
 
-  "scanReceivedParts": "Scan Received Parts",
-  "@scanReceivedParts": {},
-
   "search": "Search",
   "@search": {
     "description": "search"
   },
-
-  "searching": "Searching",
-  "@searching": {},
 
   "searchLocation": "Search for location",
   "@searchLocation": {},
@@ -1202,6 +1280,9 @@
 
   "searchStock": "Search Stock",
   "@searchStock": {},
+
+  "searching": "Searching",
+  "@searching": {},
 
   "select": "Select",
   "@select": {},
@@ -1217,6 +1298,9 @@
 
   "send": "Send",
   "@send": {},
+
+  "sentToCustomer": "Sent to customer",
+  "@sentToCustomer": {},
 
   "serialNumber": "Serial Number",
   "@serialNumber": {},
@@ -1254,17 +1338,26 @@
   "serverCouldNotConnect": "Could not connect to server",
   "@serverCouldNotConnect": {},
 
+  "serverDetails": "Server Details",
+  "@serverDetails": {},
+
   "serverEmpty": "Server cannot be empty",
   "@serverEmpty": {},
 
   "serverError":  "Server Error",
   "@serverError": {},
 
-  "serverDetails": "Server Details",
-  "@serverDetails": {},
+  "serverInstance": "Server Instance",
+  "@serverInstance": {},
 
   "serverMissingData": "Server response missing required fields",
   "@serverMissingData": {},
+
+  "serverNotConnected": "Server not connected",
+  "@serverNotConnected": {},
+
+  "serverNotSelected": "Server not selected",
+  "@serverNotSelected": {},
 
   "serverOld": "Old Server Version",
   "@serverOld": {},
@@ -1278,35 +1371,35 @@
   "settings": "Settings",
   "@settings": {},
 
-  "serverInstance": "Server Instance",
-  "@serverInstance": {},
-
-  "serverNotConnected": "Server not connected",
-  "@serverNotConnected": {},
-
-  "serverNotSelected": "Server not selected",
-  "@serverNotSelected": {},
+  "shipmentAdd": "Add Shipment",
+  "@shipmentAdd": {},
 
   "shipments": "Shipments",
   "@shipments": {},
 
-  "shipmentAdd": "Add Shipment",
-  "@shipmentAdd": {},
-
   "shipped": "Shipped",
   "@shipped": {},
 
+  "shippedAgainstSalesOrder": "Shipped against sales order",
+  "@shippedAgainstSalesOrder": {},
+
   "sku": "SKU",
   "@sku": {},
-
-  "sounds": "Sounds",
-  "@sounds": {},
 
   "soundOnBarcodeAction": "Play audible tone on barcode action",
   "@soundOnBarcodeAction": {},
 
   "soundOnServerError": "Play audible tone on server error",
   "@soundOnServerError": {},
+
+  "sounds": "Sounds",
+  "@sounds": {},
+
+  "splitChildItem": "Split child item",
+  "@splitChildItem": {},
+
+  "splitFromParent": "Split from parent",
+  "@splitFromParent": {},
 
   "status": "Status",
   "@status": {},
@@ -1319,6 +1412,12 @@
     "description": "stock"
   },
 
+  "stockAdd": "Stock add",
+  "@stockAdd": {},
+
+  "stockCount": "Stock count",
+  "@stockCount": {},
+
   "stockDetails": "Current available stock quantity",
   "@stockDetails": {},
 
@@ -1326,9 +1425,6 @@
   "@stockItem": {
     "description": "stock item title"
   },
-
-  "stockItems": "Stock Items",
-  "@stockItems": {},
 
   "stockItemCreate": "New Stock Item",
   "@stockItemCreate": {},
@@ -1354,23 +1450,26 @@
   "stockItemHistoryDetail": "Display historical stock tracking information",
   "@stockItemHistoryDetail": {},
 
+  "stockItemNotes": "Stock Item Notes",
+  "@stockItemNotes": {},
+
   "stockItemTransferred": "Stock item transferred",
   "@stockItemTransferred": {},
 
-  "stockItemUpdated": "Stock item updated",
-  "@stockItemUpdated": {},
-
-  "stockItemsNotAvailable": "No stock items available",
-  "@stockItemsNotAvailable": {},
-
-  "stockItemNotes": "Stock Item Notes",
-  "@stockItemNotes": {},
+  "stockItemUpdateFailure": "Stock item update failed",
+  "@stockItemUpdateFailure": {},
 
   "stockItemUpdateSuccess": "Stock item updated",
   "@stockItemUpdateSuccess": {},
 
-  "stockItemUpdateFailure": "Stock item update failed",
-  "@stockItemUpdateFailure": {},
+  "stockItemUpdated": "Stock item updated",
+  "@stockItemUpdated": {},
+
+  "stockItems": "Stock Items",
+  "@stockItems": {},
+
+  "stockItemsNotAvailable": "No stock items available",
+  "@stockItemsNotAvailable": {},
 
   "stockLocation": "Stock Location",
   "@stockLocation": {
@@ -1380,8 +1479,17 @@
   "stockLocations": "Stock Locations",
   "@stockLocations": {},
 
+  "stockMove": "Stock move",
+  "@stockMove": {},
+
+  "stockRemove": "Stock remove",
+  "@stockRemove": {},
+
   "stockTopLevel": "Top level stock location",
   "@stockTopLevel": {},
+
+  "stockUpdate": "Stock update",
+  "@stockUpdate": {},
 
   "strictHttps": "Use Strict HTTPS",
   "@strictHttps": {},
@@ -1389,23 +1497,23 @@
   "strictHttpsDetails": "Enforce strict checking of HTTPs certificates",
   "@strictHttpsDetails": {},
 
-  "subcategory": "Subcategory",
-  "@subcategory": {},
-
   "subcategories": "Subcategories",
   "@subcategories": {},
 
+  "subcategory": "Subcategory",
+  "@subcategory": {},
+
   "sublocation": "Sublocation",
   "@sublocation": {},
-
-  "sublocations": "Sublocations",
-  "@sublocations": {},
 
   "sublocationNone": "No Sublocations",
   "@sublocationNone": {},
 
   "sublocationNoneDetail": "No sublocations available",
   "@sublocationNoneDetail": {},
+
+  "sublocations": "Sublocations",
+  "@sublocations": {},
 
   "submitFeedback": "Submit Feedback",
   "@submitFeedback": {},
@@ -1431,11 +1539,11 @@
   "supplierParts": "Supplier Parts",
   "@supplierParts": {},
 
-  "suppliers": "Suppliers",
-  "@suppliers": {},
-
   "supplierReference": "Supplier Reference",
   "@supplierReference": {},
+
+  "suppliers": "Suppliers",
+  "@suppliers": {},
 
   "takePicture": "Take Picture",
   "@takePicture": {},
@@ -1452,17 +1560,6 @@
   "testPassedOrFailed": "Test passed or failed",
   "@testPassedOrFailed": {},
 
-  "testsRequired": "Required Tests",
-  "@testsRequired": {},
-
-  "testResults": "Test Results",
-  "@testResults": {
-    "description": ""
-  },
-
-  "testResultsDetail": "Display stock item test results",
-  "@testResultsDetail": {},
-
   "testResultAdd": "Add Test Result",
   "@testResultAdd": {},
 
@@ -1477,6 +1574,17 @@
 
   "testResultUploadPass": "Test result uploaded",
   "@testResultUploadPass": {},
+
+  "testResults": "Test Results",
+  "@testResults": {
+    "description": ""
+  },
+
+  "testResultsDetail": "Display stock item test results",
+  "@testResultsDetail": {},
+
+  "testsRequired": "Required Tests",
+  "@testsRequired": {},
 
   "timeout": "Timeout",
   "@timeout": {
@@ -1578,4 +1686,5 @@
 
   "website": "Website",
   "@website": {}
+
 }
