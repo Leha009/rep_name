@@ -297,6 +297,9 @@
     "description": "Count"
   },
 
+  "countInProgress": "Ведется подсчёт",
+  "@countInProgress": {},
+
   "countStock": "Количество в наличии",
   "@countStock": {
     "description": "Count Stock"

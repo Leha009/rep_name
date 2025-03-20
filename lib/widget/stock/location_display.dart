@@ -44,7 +44,7 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
 
   List<Map<String, dynamic>> labels = [];
 
-  double stockTotalCount = 0;
+  double? stockTotalCount = 0;
 
   @override
   String getAppBarTitle() {
@@ -262,7 +262,7 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
     }
 
     if (location != null) {
-      stockTotalCount = await countStocksInLocation(location!.pk) ?? 0;
+      stockTotalCount = await countStocksInLocation(location!.pk);
     }
 
     if (mounted) {
@@ -441,9 +441,12 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
     };
 
     String stockCount;
-    if (stockTotalCount % 1 == 0) // is int
+    if (stockTotalCount == null) {
+      stockCount = L10().countInProgress;
+    }
+    else if (stockTotalCount! % 1 == 0) // is int
     {
-      stockCount = stockTotalCount.round().toString();
+      stockCount = stockTotalCount!.round().toString();
     }
     else
     {
