@@ -1,6 +1,7 @@
 ### 0.18.3 - June 2025
 ---
-- Add stock id in stock page header
+- Add stock id in stock page
+- Fix labels: fit the screen now
 
 ### 0.18.2 - March 2025
 ---

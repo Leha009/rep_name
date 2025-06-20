@@ -20,7 +20,7 @@ import "package:inventree/inventree/part.dart";
 import "package:inventree/widget/company/company_detail.dart";
 
 import "package:inventree/widget/company/supplier_part_detail.dart";
-import "package:inventree/widget/dialogs.dart";
+/* import "package:inventree/widget/dialogs.dart"; */
 import "package:inventree/widget/attachment_widget.dart";
 import "package:inventree/widget/order/sales_order_detail.dart";
 import "package:inventree/widget/stock/location_display.dart";
@@ -49,7 +49,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
   _StockItemDisplayState();
 
   @override
-  String getAppBarTitle() => "${L10().stockItem}#${widget.item.pk}";
+  String getAppBarTitle() => L10().stockItem;
 
   bool stockShowHistory = false;
   bool stockShowTests = true;
@@ -181,12 +181,30 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
           SpeedDialChild(
               child: Icon(Icons.qr_code_scanner),
               /* label: L10().scanIntoLocation, */
-              labelWidget: ConstrainedBox(
+              /* labelWidget: ConstrainedBox(
                 constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.6),
                 child: Text(
                   L10().scanIntoLocation,
                   softWrap: true,
                   overflow: TextOverflow.visible,
+                ),
+              ), */
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().scanIntoLocation,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
                 ),
               ),
               onTap: () {
@@ -565,6 +583,14 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       tiles.add(progressIndicator());
       return tiles;
     }
+
+    tiles.add(
+      ListTile(
+        title: Text("ID"),
+        leading: Icon(TablerIcons.id),
+        trailing: Text("${widget.item.pk}"),
+      )
+    );
 
     // Location information
     if ((widget.item.locationId > 0) && (widget.item.locationName.isNotEmpty)) {
