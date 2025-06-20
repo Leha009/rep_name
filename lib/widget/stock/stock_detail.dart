@@ -180,7 +180,15 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(Icons.qr_code_scanner),
-              label: L10().scanIntoLocation,
+              /* label: L10().scanIntoLocation, */
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.6),
+                child: Text(
+                  L10().scanIntoLocation,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
               onTap: () {
                 scanBarcode(
                   context,
