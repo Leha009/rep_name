@@ -1,3 +1,7 @@
+### 0.18.3 - June 2025
+---
+- Add stock id in stock page header
+
 ### 0.18.2 - March 2025
 ---
 - Add status codes

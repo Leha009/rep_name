@@ -49,7 +49,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
   _StockItemDisplayState();
 
   @override
-  String getAppBarTitle() => L10().stockItem;
+  String getAppBarTitle() => "${L10().stockItem}#${widget.item.pk}";
 
   bool stockShowHistory = false;
   bool stockShowTests = true;
@@ -323,7 +323,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
   }
 
   /// Delete the stock item from the database
-  Future<void> _deleteItem(BuildContext context) async {
+  /* Future<void> _deleteItem(BuildContext context) async {
 
     confirmationDialog(
       L10().stockItemDelete,
@@ -343,7 +343,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       },
     );
 
-  }
+  } */
 
   Future <void> _editStockItem(BuildContext context) async {
 
@@ -415,7 +415,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
   /*
    * Launch a dialog to 'remove' quantity from this StockItem
    */
-  void _removeStockDialog() {
+  /* void _removeStockDialog() {
 
     Map<String, dynamic> fields = {
       "pk": {
@@ -444,7 +444,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
           refresh(context);
         }
     );
-  }
+  } */
 
   Future <void> _countStockDialog() async {
 
