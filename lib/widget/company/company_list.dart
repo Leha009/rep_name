@@ -68,7 +68,24 @@ class _CompanyListWidgetState extends RefreshableState<CompanyListWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.circle_plus, color: Colors.green),
-              label: L10().companyAdd,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().companyAdd,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () {
                 _addCompany(context);
               }

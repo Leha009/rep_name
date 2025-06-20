@@ -61,18 +61,51 @@ class _CategoryDisplayState extends RefreshableState<CategoryDisplayWidget> {
     if (InvenTreePart().canCreate) {
      actions.add(
        SpeedDialChild(
-         child: Icon(TablerIcons.box),
-         label: L10().partCreateDetail,
-         onTap: _newPart,
-       )
-     );
+        child: Icon(TablerIcons.box),
+        labelWidget: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxWidth: MediaQuery.of(context).size.width * 0.6,
+          ),
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            decoration: BoxDecoration(
+              color: Colors.white, // цвет фона под текстом
+              border: Border.all(color: Colors.black54, width: 1), // рамка
+              borderRadius: BorderRadius.circular(4), // скругление углов
+            ),
+            child: Text(
+              L10().partCreateDetail,
+              softWrap: true,
+              overflow: TextOverflow.visible,
+            ),
+          ),
+        ),
+        onTap: _newPart,
+      ));
     }
 
     if (InvenTreePartCategory().canCreate) {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.sitemap),
-          label: L10().categoryCreateDetail,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().categoryCreateDetail,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () {
             _newCategory(context);
           }

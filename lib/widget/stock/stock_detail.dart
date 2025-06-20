@@ -104,7 +104,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
         actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.circle_check, color: Colors.blue),
-            label: L10().countStock,
+            labelWidget: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.white, // цвет фона под текстом
+                  border: Border.all(color: Colors.black54, width: 1), // рамка
+                  borderRadius: BorderRadius.circular(4), // скругление углов
+                ),
+                child: Text(
+                  L10().countStock,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
+            ),
             onTap: _countStockDialog,
           )
         );
@@ -112,7 +129,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
         /* actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.circle_minus, color: Colors.red),
-            label: L10().removeStock,
+            labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().removeStock,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
             onTap: _removeStockDialog,
           )
         ); */
@@ -120,7 +154,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
         actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.circle_plus, color: Colors.green),
-            label: L10().addStock,
+            labelWidget: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.white, // цвет фона под текстом
+                  border: Border.all(color: Colors.black54, width: 1), // рамка
+                  borderRadius: BorderRadius.circular(4), // скругление углов
+                ),
+                child: Text(
+                  L10().addStock,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
+            ),
             onTap: _addStockDialog,
           )
         );
@@ -130,7 +181,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.transfer),
-          label: L10().transferStock,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().transferStock,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () {
             _transferStockDialog(context);
           }
@@ -142,7 +210,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.printer),
-          label: L10().printLabel,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().printLabel,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             selectAndPrintLabel(
                 context,
@@ -160,7 +245,24 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.trash, color: Colors.red),
-              label: L10().stockItemDelete,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().stockItemDelete,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () {
                 _deleteItem(context);
               }
@@ -180,15 +282,6 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(Icons.qr_code_scanner),
-              /* label: L10().scanIntoLocation, */
-              /* labelWidget: ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.6),
-                child: Text(
-                  L10().scanIntoLocation,
-                  softWrap: true,
-                  overflow: TextOverflow.visible,
-                ),
-              ), */
               labelWidget: ConstrainedBox(
                 constraints: BoxConstraints(
                   maxWidth: MediaQuery.of(context).size.width * 0.6,

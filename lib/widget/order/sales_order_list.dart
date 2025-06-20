@@ -40,7 +40,24 @@ class _SalesOrderListWidgetState extends RefreshableState<SalesOrderListWidget> 
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.circle_plus),
-              label: L10().salesOrderCreate,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().salesOrderCreate,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () {
                 _createSalesOrder(context);
               }

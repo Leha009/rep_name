@@ -95,7 +95,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
         actions.add(
             SpeedDialChild(
                 child: Icon(TablerIcons.qrcode),
-                label: L10().barcodeScanItem,
+                labelWidget: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width * 0.6,
+                  ),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Colors.white, // цвет фона под текстом
+                      border: Border.all(color: Colors.black54, width: 1), // рамка
+                      borderRadius: BorderRadius.circular(4), // скругление углов
+                    ),
+                    child: Text(
+                      L10().barcodeScanItem,
+                      softWrap: true,
+                      overflow: TextOverflow.visible,
+                    ),
+                  ),
+                ),
                 onTap: () {
                   scanBarcode(
                     context,
@@ -112,7 +129,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
         actions.add(
           SpeedDialChild(
             child: Icon(Icons.barcode_reader),
-            label: L10().scanReceivedParts,
+            labelWidget: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.white, // цвет фона под текстом
+                  border: Border.all(color: Colors.black54, width: 1), // рамка
+                  borderRadius: BorderRadius.circular(4), // скругление углов
+                ),
+                child: Text(
+                  L10().scanReceivedParts,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
+            ),
             onTap:() async {
               scanBarcode(
                 context,
@@ -128,7 +162,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
         actions.add(
             SpeedDialChild(
                 child: Icon(TablerIcons.qrcode),
-                label: L10().transferStockLocation,
+                labelWidget: ConstrainedBox(
+                  constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width * 0.6,
+                  ),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Colors.white, // цвет фона под текстом
+                      border: Border.all(color: Colors.black54, width: 1), // рамка
+                      borderRadius: BorderRadius.circular(4), // скругление углов
+                    ),
+                    child: Text(
+                      L10().transferStockLocation,
+                      softWrap: true,
+                      overflow: TextOverflow.visible,
+                    ),
+                  ),
+                ),
                 onTap: () {
                   scanBarcode(
                     context,
@@ -163,7 +214,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.sitemap),
-              label: L10().locationCreate,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().locationCreate,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 _newLocation(context);
               }
@@ -176,7 +244,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.packages),
-              label: L10().stockItemCreate,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().stockItemCreate,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 _newStockItem(context);
               }
@@ -188,7 +273,24 @@ class _LocationDisplayState extends RefreshableState<LocationDisplayWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.printer),
-              label: L10().printLabel,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().printLabel,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 selectAndPrintLabel(
                     context,

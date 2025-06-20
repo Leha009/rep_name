@@ -120,7 +120,24 @@ class _SOLineDetailWidgetState extends RefreshableState<SoLineDetailWidget> {
       buttons.add(
         SpeedDialChild(
           child: Icon(TablerIcons.transition_right, color: Colors.blue),
-          label: L10().allocateStock,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().allocateStock,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             _allocateStock(context);
           }
@@ -141,7 +158,24 @@ class _SOLineDetailWidgetState extends RefreshableState<SoLineDetailWidget> {
         actions.add(
             SpeedDialChild(
               child: Icon(TablerIcons.transition_right),
-              label: L10().allocateStock,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().allocateStock,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 scanBarcode(
                   context,

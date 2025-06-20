@@ -43,7 +43,24 @@ class _StockItemTestResultDisplayState extends RefreshableState<StockItemTestRes
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.circle_plus),
-          label: L10().testResultAdd,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().testResultAdd,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () {
             addTestResult(context);
           }

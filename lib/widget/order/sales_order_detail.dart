@@ -158,7 +158,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.camera, color: Colors.blue),
-            label: L10().takePicture,
+            labelWidget: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.white, // цвет фона под текстом
+                  border: Border.all(color: Colors.black54, width: 1), // рамка
+                  borderRadius: BorderRadius.circular(4), // скругление углов
+                ),
+                child: Text(
+                  L10().takePicture,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
+            ),
             onTap: () async {
               _uploadImage(context);
             }
@@ -170,7 +187,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.send, color: Colors.blue),
-              label: L10().issueOrder,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().issueOrder,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 _issueOrder(context);
               }
@@ -182,7 +216,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.circle_x, color: Colors.red),
-              label: L10().cancelOrder,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().cancelOrder,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () async {
                 _cancelOrder(context);
               }
@@ -195,7 +246,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.circle_plus, color: Colors.green),
-          label: L10().lineItemAdd,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().lineItemAdd,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             _addLineItem(context);
           }
@@ -205,7 +273,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.circle_plus, color: Colors.green),
-          label: L10().shipmentAdd,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().shipmentAdd,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             _addShipment(context);
           }
@@ -224,7 +309,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(Icons.barcode_reader),
-          label: L10().lineItemAdd,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().lineItemAdd,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             scanBarcode(
               context,
@@ -238,7 +340,24 @@ class _SalesOrderDetailState extends RefreshableState<SalesOrderDetailWidget> {
         actions.add(
           SpeedDialChild(
             child: Icon(TablerIcons.transition_right),
-            label: L10().allocateStock,
+            labelWidget: ConstrainedBox(
+              constraints: BoxConstraints(
+                maxWidth: MediaQuery.of(context).size.width * 0.6,
+              ),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.white, // цвет фона под текстом
+                  border: Border.all(color: Colors.black54, width: 1), // рамка
+                  borderRadius: BorderRadius.circular(4), // скругление углов
+                ),
+                child: Text(
+                  L10().allocateStock,
+                  softWrap: true,
+                  overflow: TextOverflow.visible,
+                ),
+              ),
+            ),
             onTap: () async {
               scanBarcode(
                 context,

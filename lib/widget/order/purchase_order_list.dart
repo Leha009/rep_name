@@ -42,7 +42,24 @@ class _PurchaseOrderListWidgetState extends RefreshableState<PurchaseOrderListWi
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.circle_plus),
-          label: L10().purchaseOrderCreate,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().purchaseOrderCreate,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () {
             _createPurchaseOrder(context);
           }
@@ -89,7 +106,24 @@ class _PurchaseOrderListWidgetState extends RefreshableState<PurchaseOrderListWi
       actions.add(
         SpeedDialChild(
           child: Icon(Icons.barcode_reader),
-          label: L10().scanReceivedParts,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().scanReceivedParts,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap:() async {
             scanBarcode(
               context,

@@ -3,7 +3,7 @@ import "package:flutter_speed_dial/flutter_speed_dial.dart";
 import "package:flutter_tabler_icons/flutter_tabler_icons.dart";
 
 import "package:inventree/app_colors.dart";
-import "package:inventree/barcode/barcode.dart";
+/* import "package:inventree/barcode/barcode.dart"; */
 import "package:inventree/l10.dart";
 import "package:inventree/helpers.dart";
 
@@ -110,7 +110,24 @@ class _PartDisplayState extends RefreshableState<PartDetailWidget> {
       actions.add(
           SpeedDialChild(
               child: Icon(TablerIcons.packages),
-              label: L10().stockItemCreate,
+              labelWidget: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: MediaQuery.of(context).size.width * 0.6,
+                ),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.white, // цвет фона под текстом
+                    border: Border.all(color: Colors.black54, width: 1), // рамка
+                    borderRadius: BorderRadius.circular(4), // скругление углов
+                  ),
+                  child: Text(
+                    L10().stockItemCreate,
+                    softWrap: true,
+                    overflow: TextOverflow.visible,
+                  ),
+                ),
+              ),
               onTap: () {
                 _newStockItem(context);
               }
@@ -122,7 +139,24 @@ class _PartDisplayState extends RefreshableState<PartDetailWidget> {
       actions.add(
         SpeedDialChild(
           child: Icon(TablerIcons.printer),
-          label: L10().printLabel,
+          labelWidget: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width * 0.6,
+            ),
+            child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: Colors.white, // цвет фона под текстом
+                border: Border.all(color: Colors.black54, width: 1), // рамка
+                borderRadius: BorderRadius.circular(4), // скругление углов
+              ),
+              child: Text(
+                L10().printLabel,
+                softWrap: true,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+          ),
           onTap: () async {
             selectAndPrintLabel(
               context,
