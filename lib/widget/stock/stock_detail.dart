@@ -701,10 +701,12 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     );
 
     if (stockBuild != null) {
-      ListTile(
-        title: Text("Build"),
-        leading: Icon(TablerIcons.tools),
-        trailing: Text("${stockBuild?.reference ?? ""}"),
+      tiles.add(
+        ListTile(
+          title: Text("Build"),
+          leading: Icon(TablerIcons.tools),
+          trailing: Text("${stockBuild?.reference ?? ""}"),
+        )
       );
     }
 
