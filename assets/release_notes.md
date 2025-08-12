@@ -1,3 +1,6 @@
+### 0.18.4 - August 2025
+---
+- Add build reference to stock page
 ### 0.18.3 - June 2025
 ---
 - Add stock id in stock page
