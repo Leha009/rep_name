@@ -468,6 +468,8 @@ class InvenTreeStockItem extends InvenTreeModel {
 
     int get locationId => getInt("location");
 
+    int get buildId => getInt("build");
+
     bool isSerialized() => serialNumber.isNotEmpty && quantity.toInt() == 1;
 
     String serialOrQuantityDisplay() {

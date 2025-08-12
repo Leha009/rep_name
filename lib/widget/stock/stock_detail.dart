@@ -14,6 +14,7 @@ import "package:inventree/api_form.dart";
 import "package:inventree/labels.dart";
 import "package:inventree/preferences.dart";
 
+import "package:inventree/inventree/build.dart";
 import "package:inventree/inventree/company.dart";
 import "package:inventree/inventree/stock.dart";
 import "package:inventree/inventree/part.dart";
@@ -59,6 +60,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
   InvenTreePart? part;
   InvenTreeSalesOrder? salesOrder;
   InvenTreeCompany? customer;
+  InvenTreeBuild? stockBuild;
 
   @override
   List<Widget> appBarActions(BuildContext context) {
@@ -91,6 +93,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     return actions;
   }
 
+  // MARK: Action Buttons
   @override
   List<SpeedDialChild> actionButtons(BuildContext context) {
 
@@ -273,6 +276,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     return actions;
   }
 
+  // MARK: Barcode Buttons
   @override
   List<SpeedDialChild> barcodeButtons(BuildContext context) {
     List<SpeedDialChild> actions = [];
@@ -330,6 +334,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
 
   int attachmentCount = 0;
 
+  // MARK: onBuild
   @override
   Future<void> onBuild(BuildContext context) async {
     // Load part data if not already loaded
@@ -338,6 +343,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     }
   }
 
+  // MARK: Request
   @override
   Future<void> request(BuildContext context) async {
     await api.StockStatus.load();
@@ -354,6 +360,9 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
 
     // !Not implemented in our API
     //expiryEnabled = await api.getGlobalBooleanSetting("STOCK_ENABLE_EXPIRY");
+
+    // Build information
+    stockBuild = await InvenTreeBuild().get(widget.item.buildId) as InvenTreeBuild?;
 
     // Request part information
     part = await InvenTreePart().get(widget.item.partId) as InvenTreePart?;
@@ -464,6 +473,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
 
   } */
 
+  // MARK: Edit
   Future <void> _editStockItem(BuildContext context) async {
 
     var fields = InvenTreeStockItem().formFields();
@@ -490,6 +500,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
 
   }
 
+  // MARK: Add Stock Dialog
   /*
    * Launch a dialog to 'add' quantity to this StockItem
    */
@@ -565,6 +576,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     );
   } */
 
+  // MARK: Count Stock Dialog
   Future <void> _countStockDialog() async {
 
     Map<String, dynamic> fields = {
@@ -596,6 +608,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     );
   }
 
+  // MARK: Transfer Stock Dialog
   /*
    * Launches an API Form to transfer this stock item to a new location
    */
@@ -617,6 +630,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     );
   }
 
+  // MARK: Header Tile
   Widget headerTile() {
 
     Widget? trailing;
@@ -661,6 +675,7 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
     );
   }
 
+  // MARK: Tiles
   /*
    * Construct a list of detail elements about this StockItem.
    * The number of elements may vary depending on the StockItem details
@@ -684,6 +699,14 @@ class _StockItemDisplayState extends RefreshableState<StockDetailWidget> {
         trailing: Text("${widget.item.pk}"),
       )
     );
+
+    if (stockBuild != null) {
+      ListTile(
+        title: Text("Build"),
+        leading: Icon(TablerIcons.tools),
+        trailing: Text("${stockBuild?.reference ?? ""}"),
+      );
+    }
 
     // Location information
     if ((widget.item.locationId > 0) && (widget.item.locationName.isNotEmpty)) {
